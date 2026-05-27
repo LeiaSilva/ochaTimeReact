@@ -7,7 +7,6 @@ export const Footer = ()=>{
             <div className="footer-container">
                 <div className="-section1">
                     <p>Ocha Time</p>
-                    <img src="" alt="" />
                 </div>
                 <div className="-section2">
                     <ul>

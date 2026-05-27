@@ -6,12 +6,13 @@ header {
 
 .nav {
     width: 100%;
+    border-radius: 5px;
     height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid black;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.1);
 }
 
 .nav .homeResponsive {
@@ -19,10 +20,17 @@ header {
 }
 
 .nav .-logo {
-    background-color: rgb(230, 15, 15);
+    color: rgb(102, 73, 30);
     margin: 0;
-    height: 2rem;
+    height: 5rem;
     width: 30%;
+    font-size: 1.6rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
 
 }
 
@@ -37,10 +45,11 @@ header {
     text-decoration: none;
     margin: .5rem;
     padding: 5px 10px;
-    border-bottom: 2px solid pink;
+    border-bottom: 2px solid rgb(102, 73, 30);
     font-family: "Cherry Bomb One", system-ui;
     font-weight: 400;
     font-style: normal;
+    cursor: pointer;
 }
 
 .containerCarrito {

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Botones } from './Botones';
+import { Cantidad } from './Cantidad';
+import { Advertencias } from './Advertencias';
 import style from './CardProduct.module.css';
 export const CardProduct = ({ nombre, prec, descuento, img, stock, id, addToCarrito }) => {
     //--Sobre cards
@@ -25,12 +27,24 @@ export const CardProduct = ({ nombre, prec, descuento, img, stock, id, addToCarr
 
         }
     }
+    //Advertencia
+    const [adv, setAdv] = useState(false);
+    const muestraAdv = () => {
+        if (cantidad === 0) {
+            setAdv(true);
+            setTimeout(() => setAdv(false), 2000);
+        } else {
+            addToCarrito({ nombre, prec, cantidad });
+            setAdv(false);
+        }
+    }
 
-    const noPuedeAgregarCarrito = cantidad == 0 ? <p className={style.adv}>Debe agregar un cantidad</p> : <Botones texto="Agregar" icono="add-outline" className={style.btnCard} onClick={() => {
-        addToCarrito({ nombre, prec, cantidad })
-    }}></Botones> ;
+    const PuedeAgregarCarrito = stock > 0 ?  <Botones texto="Agregar" icono="add-outline" className={style.btnCard} onClick={muestraAdv}></Botones> :null;
     return (
         <>
+        {
+            adv && <Advertencias texto="Seleccione una cantidad" icon="alert-circle-outline"></Advertencias>
+        }
 
             <div className={style.cardContainer}>
                 <Link to={`/producto/${id}`} className={style.cardLink}>
@@ -46,13 +60,9 @@ export const CardProduct = ({ nombre, prec, descuento, img, stock, id, addToCarr
 
                     </div>
                 </Link>
-                <div className={style.cantidad}>
-                    <button onClick={resta}>-</button>
-                    <span className={style.cant}>{cantidad}</span>
-                    <button onClick={suma}>+</button>
-                </div>
+                <Cantidad cantidad={cantidad} onSumar={suma} onRestar={resta}></Cantidad>
                 <div className={style.btns}>
-                    {noPuedeAgregarCarrito}
+                    {PuedeAgregarCarrito}
                 </div>
             </div>
 

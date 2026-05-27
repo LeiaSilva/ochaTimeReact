@@ -1,0 +1,27 @@
+.cantidad{
+    border-radius: 20px;
+    border: 1px solid grey;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.cantidad button{
+    width: auto;
+    font-size: 1.2rem;
+    border-radius: 45px;
+    border: none;
+    cursor: pointer;
+    margin: .5rem .5rem;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.cantidad .cant{
+    font-size: 1.2rem;
+    margin: .5rem;
+}

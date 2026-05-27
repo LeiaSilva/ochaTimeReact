@@ -7,7 +7,7 @@ export const NavBar = ({ carrito }) => {
             <nav className="nav">
                 <ion-icon name="home-outline" className="homeResponsive"></ion-icon>
                 <div className="-logo">
-                    <p>OCHA TIME</p>
+                    <p>Ocha Time</p>
                 </div>
                 <ul className="-list">
                     <li>Home</li>
