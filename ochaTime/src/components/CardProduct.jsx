@@ -26,7 +26,7 @@ export const CardProduct = ({ nombre, prec, descuento, img, stock, id, addToCarr
         }
     }
 
-    const noPuedeAgregarCarrito = cantidad == 0 ? <p>Debe agregar un cantidad</p> : <Botones texto="Agregar" icono="add-outline" className={style.btnCard} onClick={() => {
+    const noPuedeAgregarCarrito = cantidad == 0 ? <p className={style.adv}>Debe agregar un cantidad</p> : <Botones texto="Agregar" icono="add-outline" className={style.btnCard} onClick={() => {
         addToCarrito({ nombre, prec, cantidad })
     }}></Botones> ;
     return (

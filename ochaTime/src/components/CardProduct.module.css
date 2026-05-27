@@ -36,6 +36,9 @@
     font-size: 0.9rem;
     text-align: center;
     color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .cardContainer .esp{
     width: 100%;
@@ -45,11 +48,17 @@
     color: rgb(0, 255, 34);
     text-align: start;
     border-bottom: 1px solid rgb(182, 182, 182);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .cardContainer .esp .prodName {
     font-size: 1.3rem;
     text-align: center;
     margin: .5rem 0;
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 .cardContainer .esp .prec{
     display: flex;
@@ -57,15 +66,24 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: .2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .cardContainer .esp .prec p {
     font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .cardContainer .esp .prec .precTachado{
     font-size: 1rem;
     text-decoration: line-through;
     color: grey;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .cardContainer .cantidad{
     border-radius: 20px;
@@ -74,6 +92,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .cardContainer .cantidad button{
     width: auto;
@@ -83,6 +104,9 @@
     cursor: pointer;
     margin: .5rem .5rem;
     background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .cardContainer .cantidad .cant{
     font-size: 1.2rem;
@@ -100,4 +124,7 @@
     border-radius: 10px;
     border: 1px solid grey;
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
