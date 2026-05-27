@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
-import { Shop } from './pages/shop';
+import { Shop } from './pages/Shop';
 import { LayoutPublic } from './layouts/LayoutPublic';
 import './App.css'
 import { Detalles } from './pages/Detalles';
