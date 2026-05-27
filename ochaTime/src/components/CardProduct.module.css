@@ -1,0 +1,103 @@
+.cardLink{
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+}
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin: 1rem 1rem;
+    padding: 1.5rem 1.5rem;
+    border: 1px solid rgb(170, 170, 170);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+    position: relative;
+}
+
+.cardContainer .cardImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cardContainer .desc {
+    position: absolute;
+    top: 19px;
+    left: 228px;
+    background-color: red;
+    border-radius: 20px 0 0 20px;
+    width: 20%;
+    font-size: 0.9rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.cardContainer .esp{
+    width: 100%;
+}
+.cardContainer .esp .stock{
+    font-size: .6rem;
+    color: rgb(0, 255, 34);
+    text-align: start;
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+.cardContainer .esp .prodName {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: .5rem 0;
+}
+.cardContainer .esp .prec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .2rem;
+}
+.cardContainer .esp .prec p {
+    font-size: 1.3rem;
+}
+
+.cardContainer .esp .prec .precTachado{
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: grey;
+}
+.cardContainer .cantidad{
+    border-radius: 20px;
+    border: 1px solid grey;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardContainer .cantidad button{
+    width: auto;
+    font-size: 1.2rem;
+    border-radius: 45px;
+    border: none;
+    cursor: pointer;
+    margin: .5rem .5rem;
+    background-color: white;
+}
+.cardContainer .cantidad .cant{
+    font-size: 1.2rem;
+    margin: .5rem;
+}
+.cardContainer .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.cardContainer .btns .btnCard{
+    width: 100%;
+    padding: .4rem;
+    border-radius: 10px;
+    border: 1px solid grey;
+    cursor: pointer;
+}

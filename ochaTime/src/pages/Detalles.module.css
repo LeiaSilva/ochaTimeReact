@@ -1,0 +1,84 @@
+.volverInicio{
+    margin: 1rem;
+    width: 10%;
+}
+.volverShop{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid green;
+    cursor: pointer;    
+    background-color: white;
+}
+
+.detailContainer{
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    border-bottom: 1px solid black;
+}
+.detailContainer .detailProducto{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detailContainer .detailProducto .detailImg{
+    object-fit: cover;
+    width: 90%;
+    margin: .5rem;
+}
+.detailContainer .detailInfo{
+    width: 35%;
+    height: 400px;
+    margin: .5rem;
+    border-radius: 20px;
+    border: 1px solid grey;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.detailContainer .detailInfo .detailInfoNom{
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 2rem;
+}
+.detailContainer .detailInfo .detailDescrip{
+    margin: 1rem;
+    font-style: italic;
+}
+.detailContainer .detailInfo .detailInfoBtns{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    flex-wrap: nowrap;
+    gap: .5rem;
+}
+.detailContainer .detailInfo .detailInfoBtns .perso{
+    width: 90%;
+    border-radius: 2px;
+    border: 1px solid grey;
+    padding: 3px;
+    font-size: 1rem;
+}
+.detailContainer .detailInfo .detailInfoBtns .noEsPerso{
+    font-size: .9rem;
+    color: brown;
+}
+
+.detailContainer .detailInfo .detailInfoBtns .compra{
+    font-size: 1rem ;
+    border-radius: 2px;
+    border: 1px solid grey;
+    padding: 3px;
+    width: 90%;
+}
+.detailContainer .detailInfo .detailStock{
+    text-align: end;
+    margin: 0 .5rem;
+    color: rgb(168, 168, 168);
+
+}

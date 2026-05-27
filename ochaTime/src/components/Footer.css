@@ -1,0 +1,22 @@
+footer{
+    margin: 0;
+}
+.footer-container{
+    display: flex;
+    width: 100%;
+}
+.footer-container .-section1{
+    width: 50%;
+}
+.footer-container .-section2{
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-derechos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(104, 91, 91, 0.89);
+    font-size: .8rem;
+}

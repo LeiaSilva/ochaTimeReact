@@ -1,0 +1,58 @@
+[
+    {
+        "id" : 1 ,
+        "nombre":"Cookie Box Totoro",
+        "prec": 2500 , 
+        "stock" : 10 , 
+        "img": "/cookieBox.png" , 
+        "destacado": true ,
+        "descuento" : 0 ,
+        "descripcion" : "Caja mediana de galletas. Contiene 5 piezas de galletas sabor vainilla de la tematica. Luego 8 galletas de vainilla con glaseado y chocolate." , 
+        "personalizable" : true
+    } , 
+    {
+        "id" : 2 ,
+        "nombre":"Cookie Box Perritos",
+        "prec": 2000 , 
+        "stock" : 10 , 
+        "img": "/cookieBox.png" , 
+        "destacado": false ,
+        "descuento" : 5 , 
+        "descripcion" : "Caja mediana de galletas. Contiene 5 piezas de galletas sabor vainilla de la tematica. Luego 8 galletas de vainilla con glaseado y chocolate." ,
+        "personalizable" : false
+    },
+    {
+        "id" : 3 ,
+        "nombre":"Cookie Box Gatitos",
+        "prec": 2000 , 
+        "stock" : 10 , 
+        "img": "/cookieBox.png" , 
+        "destacado": true ,
+        "descuento" : 0 ,
+        "descripcion" : "Caja mediana de galletas. Contiene 5 piezas de galletas sabor vainilla de la tematica. Luego 8 galletas de vainilla con glaseado y chocolate.",
+        "personalizable" : false
+    },
+    {
+        "id" : 4 ,
+        "nombre":"Cookie Box San Valentín",
+        "prec": 3500 , 
+        "stock" : 10 , 
+        "img": "/cookieBox.png" , 
+        "destacado": false ,
+        "descuento" : 0 ,
+        "descripcion" : "Caja mediana de galletas. Contiene 5 piezas de galletas sabor vainilla de la tematica. Luego 8 galletas de vainilla con glaseado y chocolate." ,
+        "personalizable" : true
+    },
+    {
+        "id" : 5 ,
+        "nombre":"Cookie Box BT21",
+        "prec": 2800 , 
+        "stock" : 10 , 
+        "img": "/cookieBox.png" , 
+        "destacado": true ,
+        "descuento" : 10 , 
+        "descripcion" : "Caja mediana de galletas. Contiene 5 piezas de galletas sabor vainilla de la tematica. Luego 8 galletas de vainilla con glaseado y chocolate.",
+        "personalizable" : true
+    }
+
+]
