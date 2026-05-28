@@ -1,7 +1,17 @@
 import { NavLink, Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './NavBar.css';
 
 export const NavBar = ({ carrito }) => {
+    const [animar, setAnimar] = useState(false);
+    useEffect(() => {
+        if (carrito.length > 0) {
+            setAnimar(true);
+            setTimeout(() => {
+                setAnimar(false);
+            }, 800);
+        } ;
+    }, [carrito])
     return (
         <>
             <nav className="nav">
@@ -20,7 +30,7 @@ export const NavBar = ({ carrito }) => {
                         <NavLink to={`/QuienesSomos`} className={({ isActive }) => isActive ? 'activo' : ''}>Quienes Somos</NavLink>
                     </li>
                 </ul>
-                <div className="containerCarrito">
+                <div className={`containerCarrito ${animar ? 'bounce' : ''}`}>
                     <span className="-contador">{carrito.length}</span>
                     <ion-icon name="cart-outline" className="-icon"></ion-icon>
                 </div>
