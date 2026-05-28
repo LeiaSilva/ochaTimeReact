@@ -1,19 +1,20 @@
 .advertencia {
     width: 30%;
     height: 250px;
-    position: relative;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 10px;
-    left: 40%;
-    bottom: 25%;
+    top: 30%;
+    left: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 10px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 25px  rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    animation: aparecer 0.7s ease;
 }
 
 .advertencia .containerIcon {
@@ -22,11 +23,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .advertencia .containerIcon .styleIcon {
     font-size: 7rem;
     color: red;
+    animation: iconBounce 0.8s ease;
 }
 
 .advertencia .containerText {
@@ -42,4 +45,34 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+}
+
+/*--ANIMACIONES--*/
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+        transform: scale(0.7) translateY(-20px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.08) translateY(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes iconBounce{
+    0% {
+        transform: scale(0);
+    }
+
+    60% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
