@@ -36,8 +36,15 @@ a {
     align-items: center;
     justify-content: center;
     font-style: normal;
+    transition: transform 0.4s ease;
 
 }
+.nav .-logo:hover{
+    transform: scale(1.01);
+}   
+.nav .-logo:active{
+    transform: scale(1.01);
+}   
 
 .nav .-list {
     display: flex;
@@ -92,8 +99,8 @@ a {
     justify-content: center;
     align-items: center;
     position: relative;
-
 }
+
 
 .containerCarrito .-contador {
     position: absolute;
@@ -116,6 +123,13 @@ a {
 .containerCarrito .-icon {
     font-size: 2rem;
     display: inline-block;
+    transition: transform 0.4s ease;
+}
+.containerCarrito .-icon:hover{
+    transform: scale(1.1);
+}
+.containerCarrito .-icon:active{
+    transform: scale(1.1);
 }
 .bounce{
     animation: carritoBounce 0.8s ease;

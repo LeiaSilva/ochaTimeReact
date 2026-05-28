@@ -71,10 +71,15 @@ export const Detalles = ({ addToCarrito }) => {
             <div className={style.detailContainer}>
                 <div className={style.detailProducto}>
                     <img src={img} alt={nombre} className={style.detailImg} />
+                    {addBadge}
                 </div>
                 <div className={style.detailInfo}>
                     <h3 className={style.detailInfoNom}>{nombre}</h3>
                     <p className={style.detailDescrip} > Contiene: {descripcion}</p>
+                    <div className={style.detailPrec}>
+                        {tacharPrec}
+                    <p>${precFinal}</p>
+                    </div>
                     <Cantidad cantidad={cantidad} onSumar={suma} onRestar={resta}></Cantidad>
                     <div className={style.detailInfoBtns}>
                         {esPersonalizable}

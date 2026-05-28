@@ -27,12 +27,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .detailContainer .detailProducto .detailImg {
     object-fit: cover;
     width: 90%;
     margin: .5rem;
+}
+
+.detailContainer .detailProducto .desc {
+    position: absolute;
+    top: 7px;
+    left: 35px;
+    background-color: red;
+    border-radius: 0 20px 20px 0;
+    width: 20%;
+    font-size: 0.9rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .detailContainer .detailInfo {
@@ -62,6 +78,33 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: italic;
+}
+
+.detailContainer .detailInfo .detailPrec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.detailContainer .detailInfo .detailPrec p {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.detailContainer .detailInfo .detailPrec .precTachado {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: grey;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .detailContainer .detailInfo .detailInfoBtns {
