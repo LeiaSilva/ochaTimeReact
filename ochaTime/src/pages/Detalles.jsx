@@ -1,12 +1,14 @@
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from 'react'
+import { useCarrito } from "../Context/CarritoContext";
 import { CardProduct } from "../components/CardProduct";
 import { Botones } from "../components/Botones";
 import { Cantidad } from "../components/Cantidad";
 import { Advertencias } from "../components/Advertencias";
 import style from "./Detalles.module.css";
 
-export const Detalles = ({ addToCarrito }) => {
+export const Detalles = () => {
+    const {addToCarrito} = useCarrito();
     //fetch
     const { id } = useParams();
     const [productos, setProductos] = useState([])
@@ -17,6 +19,7 @@ export const Detalles = ({ addToCarrito }) => {
     }, [])
     const producto = productos.find(p => p.id === Number(id));
     //carrito
+    
     const [cantidad, setCantidad] = useState(0);
     const suma = () => {
         if (cantidad < stock) {
@@ -37,7 +40,7 @@ export const Detalles = ({ addToCarrito }) => {
             setAdv(true);
             setTimeout(() => setAdv(false), 2000);
         } else {
-            addToCarrito({ nombre, prec, cantidad });
+            addToCarrito({ nombre, prec, cantidad , id });
             setAdv(false);
         }
     }

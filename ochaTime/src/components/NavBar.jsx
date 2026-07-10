@@ -1,8 +1,10 @@
 import { NavLink, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { useCarrito } from '../Context/CarritoContext';
 import './NavBar.css';
 
-export const NavBar = ({ carrito }) => {
+export const NavBar = () => {
+    const {carrito} = useCarrito();
     const [animar, setAnimar] = useState(false);
     useEffect(() => {
         if (carrito.length > 0) {

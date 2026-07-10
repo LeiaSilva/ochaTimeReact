@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { useCarrito } from '../Context/CarritoContext';
 import { Link } from 'react-router-dom';
 import { Botones } from './Botones';
 import { Cantidad } from './Cantidad';
 import { Advertencias } from './Advertencias';
 import style from './CardProduct.module.css';
-export const CardProduct = ({ nombre, prec, descuento, img, stock, id, addToCarrito }) => {
+export const CardProduct = ({ nombre, prec, descuento, img, stock, id }) => {
+    const { addToCarrito } = useCarrito();
     //--Sobre cards
     const hayDesc = descuento > 0;
     const montoDesc = (prec * descuento) / 100;

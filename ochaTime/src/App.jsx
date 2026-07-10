@@ -8,20 +8,16 @@ import { Detalles } from './pages/Detalles';
 import './App.css'
 function App() {
 
-  const [carrito, setCarrito] = useState([]);
-  const addToCarrito = (producto) =>{
-    setCarrito([...carrito,producto])
-  }
 
   return (
     <>
    <BrowserRouter>
       <Routes>
-        <Route element={<LayoutPublic carrito={carrito}></LayoutPublic>}>
-          <Route path='/' element={<Shop addToCarrito={addToCarrito}></Shop>}></Route>
+        <Route element={<LayoutPublic></LayoutPublic>}>
+          <Route path='/' element={<Shop></Shop>}></Route>
           <Route path='/Home' element={<Home></Home>}></Route>
           <Route path='/QuienesSomos' element={<SobreNosotros></SobreNosotros>}></Route>
-          <Route path='/producto/:id' element={<Detalles addToCarrito={addToCarrito}></Detalles>}></Route>
+          <Route path='/producto/:id' element={<Detalles></Detalles>}></Route>
         </Route>
       </Routes>
    </BrowserRouter>
