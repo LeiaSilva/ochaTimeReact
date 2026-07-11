@@ -40,7 +40,7 @@ export const Detalles = () => {
             setAdv(true);
             setTimeout(() => setAdv(false), 2000);
         } else {
-            addToCarrito({ nombre, prec, cantidad , id });
+            addToCarrito({ nombre, prec, cantidad , id , img , size });
             setAdv(false);
         }
     }

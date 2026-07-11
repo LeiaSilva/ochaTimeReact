@@ -1,0 +1,119 @@
+.modalSliderCarrito {
+    position: absolute;
+    background-color: aquamarine;
+    top: 5rem;
+    right: 0;
+    height: 559px;
+    width: 40%;
+    z-index: 5000;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.modalSliderCarrito .cerrarCarritoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.modalSliderCarrito .cerrarCarritoContainer .cerrarCarrito {
+    font-size: 1.5rem;
+    margin: .2rem;
+}
+
+.modalSliderCarrito .carritoTitulo {
+    display: flex;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.modalSliderCarrito .carritoTitulo .carritoTituloP {
+    font-size: 1.5rem;
+    margin: .3rem;
+}
+
+.modalSliderCarrito .carritoTitulo .carritoCantidadTotal {
+    padding: .5rem;
+    margin: .3rem;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.modalSliderCarrito .carritoEnvioGratis {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalSliderCarrito .carritoContainerDetalleCompra {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.modalSliderCarrito .carritoContainerDetalleCompra .carritoSubtotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+    overflow: hidden;
+}
+
+.modalSliderCarrito .carritoContainerDetalleCompra .carritoSubtotal p {
+    margin: 0.3rem 1rem;
+}
+
+.modalSliderCarrito .carritoContainerDetalleCompra .carritoEnvioPrec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.modalSliderCarrito .carritoContainerDetalleCompra .carritoEnvioPrec p {
+    margin: 0.3rem 1rem;
+}
+
+.modalSliderCarrito .carritoContainerDetalleCompra .carritoTotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+    overflow: hidden;
+}
+
+.modalSliderCarrito .carritoContainerDetalleCompra .carritoTotal p {
+    margin: 0.3rem 1rem;
+    font-size: 1.9rem;
+}
+
+.modalSliderCarrito .carritoContainerDetalleCompra .carritoBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalSliderCarrito .carritoContainerDetalleCompra .carritoBtn {
+    margin: 0.5rem;
+    width: 80%;
+    padding: .8rem;
+    border: none;
+    border-radius: 20px;
+}
+
+.modalSliderCarrito .carritoProductosContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    overflow-y: auto;
+    max-height: 300px;
+    flex: 1;
+
+}

@@ -8,7 +8,8 @@
         "destacado": true ,
         "descuento" : 0 ,
         "descripcion" : "Caja mediana de galletas. Contiene 5 piezas de galletas sabor vainilla de la tematica. Luego 8 galletas de vainilla con glaseado y chocolate." , 
-        "personalizable" : true
+        "personalizable" : true , 
+        "size": "Mediano"
     } , 
     {
         "id" : 2 ,
@@ -19,7 +20,8 @@
         "destacado": false ,
         "descuento" : 5 , 
         "descripcion" : "Caja mediana de galletas. Contiene 5 piezas de galletas sabor vainilla de la tematica. Luego 8 galletas de vainilla con glaseado y chocolate." ,
-        "personalizable" : false
+        "personalizable" : false , 
+        "size": "Mediano"
     },
     {
         "id" : 3 ,
@@ -30,7 +32,8 @@
         "destacado": true ,
         "descuento" : 0 ,
         "descripcion" : "Caja mediana de galletas. Contiene 5 piezas de galletas sabor vainilla de la tematica. Luego 8 galletas de vainilla con glaseado y chocolate.",
-        "personalizable" : false
+        "personalizable" : false , 
+        "size": "Mediano"
     },
     {
         "id" : 4 ,
@@ -41,7 +44,8 @@
         "destacado": false ,
         "descuento" : 0 ,
         "descripcion" : "Caja mediana de galletas. Contiene 5 piezas de galletas sabor vainilla de la tematica. Luego 8 galletas de vainilla con glaseado y chocolate." ,
-        "personalizable" : true
+        "personalizable" : true, 
+        "size": "Mediano"
     },
     {
         "id" : 5 ,
@@ -52,7 +56,8 @@
         "destacado": true ,
         "descuento" : 10 , 
         "descripcion" : "Caja mediana de galletas. Contiene 5 piezas de galletas sabor vainilla de la tematica. Luego 8 galletas de vainilla con glaseado y chocolate.",
-        "personalizable" : true
+        "personalizable" : true , 
+        "size": "Mediano"
     }
 
 ]

@@ -36,17 +36,17 @@ export const CardProduct = ({ nombre, prec, descuento, img, stock, id }) => {
             setAdv(true);
             setTimeout(() => setAdv(false), 2000);
         } else {
-            addToCarrito({ nombre, prec, cantidad });
+            addToCarrito({ id, nombre, prec, cantidad, img });
             setAdv(false);
         }
     }
 
-    const PuedeAgregarCarrito = stock > 0 ?  <Botones texto="Agregar" icono="add-outline" className={style.btnCard} onClick={muestraAdv}></Botones> :null;
+    const PuedeAgregarCarrito = stock > 0 ? <Botones texto="Agregar" icono="add-outline" className={style.btnCard} onClick={muestraAdv}></Botones> : null;
     return (
         <>
-        {
-            adv && <Advertencias texto="Seleccione una cantidad" icon="alert-circle-outline"></Advertencias>
-        }
+            {
+                adv && <Advertencias texto="Seleccione una cantidad" icon="alert-circle-outline"></Advertencias>
+            }
 
             <div className={style.cardContainer}>
                 <Link to={`/producto/${id}`} className={style.cardLink}>

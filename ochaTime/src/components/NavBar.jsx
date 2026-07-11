@@ -1,19 +1,22 @@
 import { NavLink, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useCarrito } from '../Context/CarritoContext';
+import {CarritoSlider} from './CarritoSlider';
 import './NavBar.css';
 
 export const NavBar = () => {
-    const {carrito} = useCarrito();
+    const {carrito , totalUnidades} = useCarrito();
     const [animar, setAnimar] = useState(false);
+    const [openCarrito , setOpenCarrito] = useState(false);
     useEffect(() => {
-        if (carrito.length > 0) {
+        if (totalUnidades > 0) {
             setAnimar(true);
             setTimeout(() => {
                 setAnimar(false);
             }, 800);
         } ;
-    }, [carrito])
+    }, [carrito]);
+
     return (
         <>
             <nav className="nav">
@@ -33,9 +36,10 @@ export const NavBar = () => {
                     </li>
                 </ul>
                 <div className={`containerCarrito ${animar ? 'bounce' : ''}`}>
-                    <span className="-contador">{carrito.length}</span>
-                    <ion-icon name="cart-outline" className="-icon"></ion-icon>
+                    <span className="-contador">{totalUnidades}</span>
+                    <ion-icon name="cart-outline" className="-icon" onClick={() => setOpenCarrito(true)}></ion-icon>
                 </div>
+                <CarritoSlider open={openCarrito} onClose={() => setOpenCarrito(false)}></CarritoSlider>
             </nav>
         </>
 
