@@ -93,7 +93,7 @@ a {
     transform: scaleX(1);
 }
 .containerCarrito {
-    width: 30%;
+    width: 28%;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -109,7 +109,7 @@ a {
     color: aliceblue;
     width: 20%;
     top: .2rem;
-    right: 11rem;
+    right: 10rem;
     z-index: 2;
     width: 20px;
     height: 20px;
@@ -134,7 +134,25 @@ a {
 .bounce{
     animation: carritoBounce 0.8s ease;
 }
-
+.containerInicioSesion{
+    width: auto;
+    width: 6%;
+}
+ .containerInicioSesion .inicioSesion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerInicioSesion .inicioSesion .loginIcon{
+    font-size: 1.2rem;
+    margin: .2rem;
+    color: black;
+}
+.containerInicioSesion .inicioSesion p{
+    color: grey;
+    font-size: 1.2rem;
+    font-style: bold;
+}
 /*--Animaciones--*/
 @keyframes carritoBounce {
 

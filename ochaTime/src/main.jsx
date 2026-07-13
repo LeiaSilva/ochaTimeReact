@@ -1,13 +1,16 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { CarritoProvider } from './Context/CarritoContext.jsx'
+import { AuthProvider } from './Context/AuthContext.jsx'
 import './index.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <CarritoProvider>
-      <App />
-    </CarritoProvider>
+    <AuthProvider>
+      <CarritoProvider>
+        <App />
+      </CarritoProvider>
+    </AuthProvider>
   </StrictMode>,
 )
