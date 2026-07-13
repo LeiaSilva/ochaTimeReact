@@ -2,6 +2,7 @@ import { NavLink, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useCarrito } from '../Context/CarritoContext';
 import { CarritoSlider } from './CarritoSlider';
+import {Acceso} from '../pages/Acceso';
 import './NavBar.css';
 
 export const NavBar = () => {
@@ -26,24 +27,19 @@ export const NavBar = () => {
                 </div>
                 <ul className="-list">
                     <li>
-                        <NavLink to={`/Home`} className={({ isActive }) => isActive ? 'activo' : ''}>Home</NavLink>
+                        <NavLink to={`/`} className={({ isActive }) => isActive ? 'activo' : ''}>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to={`/`} className={({ isActive }) => isActive ? 'activo' : ''}>Productos</NavLink>
+                        <NavLink to={`/Shop`} className={({ isActive }) => isActive ? 'activo' : ''}>Productos</NavLink>
                     </li>
                     <li>
                         <NavLink to={`/QuienesSomos`} className={({ isActive }) => isActive ? 'activo' : ''}>Quienes Somos</NavLink>
                     </li>
                 </ul>
-                <div className="containerInicioSesion">
-                    <Link to={`/login`}>
-                        <div className="inicioSesion">
-                            <ion-icon name="person-outline" className='loginIcon'></ion-icon>
-                            <p>Admin</p>
-                        </div>
-                    </Link>
-                </div>
                 <div className={`containerCarrito ${animar ? 'bounce' : ''}`}>
+                    <Link to={`/Acceso`} className='loginContainer'>
+                        <ion-icon name="person-outline" className='loginIcon'></ion-icon>
+                    </Link>
                     <span className="-contador">{totalUnidades}</span>
                     <ion-icon name="cart-outline" className="-icon" onClick={() => setOpenCarrito(true)}></ion-icon>
                 </div>

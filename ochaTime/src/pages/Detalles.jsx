@@ -53,7 +53,7 @@ export const Detalles = () => {
     return (
         <>
             {adv && <Advertencias texto="Debes seleccionar una cantidad" icon="alert-circle-outline" />}
-            <Link to="/">
+            <Link to="/Shop">
                 <div className={style.volverInicio}>
                     <Botones texto="Volver a Shop" className={style.volverShop} />
                 </div>

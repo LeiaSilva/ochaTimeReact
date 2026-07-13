@@ -13,22 +13,53 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-self: center;
-    width: 50%;
+    width: 30%;
     font-size: 1.6rem;
     font-family: "Pacifico", cursive;
     font-weight: 400;
     color: rgb(102, 73, 30);
-    ;
+}
+.footer-container .-section1 p{
+    margin-top: 1rem;
 }
 
 .footer-container .-section2 {
-    width: 50%;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+}
+.footer-container .-section2 .nuestrasRedes{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container .-section2 .nuestrasRedes p{
+    font-size: 1.3rem;
+}
+.footer-container .-section2 .nuestrasRedes .iconos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    cursor: pointer;
+}
+.footer-container .-section2 .nuestrasRedes .iconos .insta{
+    font-size: 1.7rem;
+}
+.footer-container .-section2 .nuestrasRedes .iconos .wsp{
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.footer-container .-section2 .linksNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }
 
 .footer-derechos {

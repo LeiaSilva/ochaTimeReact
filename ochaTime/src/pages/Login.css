@@ -1,17 +1,19 @@
-.login{
+.login {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 600px;
 }
- .loginContariner {
+
+.loginContariner {
     display: flex;
     flex-direction: column;
     background-color: rgb(230, 230, 230);
     width: 40%;
-    height:450px;
-    border-radius: 10px;
+    height: 450px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(120, 90, 160, 0.18);
 }
 
 .loginContariner .loginInfoContainer {
@@ -21,7 +23,8 @@
     justify-content: center;
     height: 150px;
 }
-.loginContariner .loginInfoContainer .loginFormOchatime{
+
+.loginContariner .loginInfoContainer .loginFormOchatime {
     color: rgb(102, 73, 30);
     margin: 0;
     height: 5rem;
@@ -34,20 +37,27 @@
     justify-content: center;
     font-style: normal;
 }
-.loginContariner .loginInfoContainer .loginFormTitulo{
+
+.loginContariner .loginInfoContainer .loginFormTitulo {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
-.loginContariner .loginInfoContainer .loginFormTitulo p{
+
+.loginContariner .loginInfoContainer .loginFormTitulo p {
     font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
-.loginContariner .loginInfoContainer .loginFormTitulo .adminIcon{
+
+.loginContariner .loginInfoContainer .loginFormTitulo .adminIcon {
     font-size: 1.5rem;
     margin: 0 .5rem;
     color: rgb(112, 112, 214);
 }
+
 .loginContariner .loginForm {
     display: flex;
     flex-direction: column;
@@ -63,11 +73,15 @@
     justify-content: center;
     gap: .5rem;
 }
-.loginContariner .loginForm .loginFormCorreo .labelEmail{
+
+.loginContariner .loginForm .loginFormCorreo .labelEmail {
     font-size: 1.1rem;
     margin: 0 1.4rem;
     width: 90%;
     border-bottom: 1px solid grey;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .loginContariner .loginForm .loginFormCorreo .loginFormCorreoInputContainer {
@@ -75,8 +89,10 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    overflow: hidden;
 }
-.loginContariner .loginForm .loginFormCorreo .loginFormCorreoInputContainer .loginFormCorreoInput{
+
+.loginContariner .loginForm .loginFormCorreo .loginFormCorreoInputContainer .loginFormCorreoInput {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,6 +102,9 @@
     border-radius: 10px;
     padding: .3rem;
     background-color: grey;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .loginContariner .loginForm .loginFormCorreo .loginFormCorreoInputContainer .loginFormCorreoInput .emailIconContainer {
@@ -107,6 +126,9 @@
     justify-content: flex-start;
     border: none;
     background-color: grey;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .loginContariner .loginForm .loginFormCorreo .loginFormCorreoInputContainer .loginFormCorreoInput .emailInputContainer input {
@@ -115,6 +137,9 @@
     margin: 0 .1rem;
     border: none;
     background-color: grey;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /*password*/
@@ -132,6 +157,9 @@
     margin: 0 1.4rem;
     width: 90%;
     border-bottom: 1px solid grey;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .loginContariner .loginForm .loginFormPassword .loginFormPasswordInputContainer {
@@ -139,6 +167,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    overflow: hidden;
 }
 
 .loginContariner .loginForm .loginFormPassword .loginFormPasswordInputContainer .loginFormPasswordInput {
@@ -179,14 +208,20 @@
     margin: 0 .1rem;
     border: none;
     background-color: grey;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
+
 /*btn*/
-.loginContariner .loginForm .loginFormBtn{
+.loginContariner .loginForm .loginFormBtn {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
-.loginContariner .loginForm .loginFormBtn .btnIngresar{
+
+.loginContariner .loginForm .loginFormBtn .btnIngresar {
     border: none;
     height: 35px;
     width: 70%;
@@ -195,14 +230,44 @@
     background-color: brown;
     font-size: 1rem;
     color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
 }
-.loginContariner .loginVolver{
+
+.loginContariner .loginForm .loginFormBtn .btnIngresar:hover {
+    transform: scale(1.05);
+}
+
+.loginContariner .loginForm .loginFormBtn .btnIngresar:active {
+    transform: scale(1.05);
+}
+
+.loginContariner .loginVolver {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
 }
-.loginContariner .loginVolver .inicio{
+
+.loginContariner .loginVolver:hover {
+    transform: scale(1.05);
+}
+
+.loginContariner .loginVolver:active {
+    transform: scale(1.05);
+}
+
+.loginContariner .loginVolver .inicio {
     display: flex;
     align-items: center;
     gap: .5rem;

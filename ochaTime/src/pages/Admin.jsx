@@ -146,7 +146,7 @@ export const Admin = ({ }) => {
                             </div>
                             <div className="addProductosFormPerso">
                                 <div className="addProductosPersoLabel">
-                                    <label htmlFor="">¿Es personalizable? </label>
+                                    <label htmlFor="">¿Personalizable? </label>
                                 </div>
                                 <div className="addProductosPersoInput">
                                     <input type="checkbox"
@@ -175,7 +175,7 @@ export const Admin = ({ }) => {
                             </div>
                             <div className="addProductosFormDestacado">
                                 <div className="addProductosDestacadoLabel">
-                                    <label htmlFor="">¿Producto destacado?</label>
+                                    <label htmlFor="">¿Destacado?</label>
                                 </div>
                                 <div className="addProductosDestacadoInput">
                                     <input type="checkbox"

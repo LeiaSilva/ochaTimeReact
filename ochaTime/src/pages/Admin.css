@@ -3,41 +3,47 @@
     align-items: center;
     justify-content: center;
     height: 550px;
+    
 }
 
 .agregarProductos .addProductosContainer {
     width: 50%;
-    height: 480px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(172, 184, 189);
+    background-color: rgb(160, 161, 161);
     border-radius: 20px;
+    gap: 1rem;
+    box-shadow: 0 8px 25px rgba(120, 90, 160, 0.18);
 }
 
 .agregarProductos .addProductosContainer .iconoProductosContainer {
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid grey ;
+    height: 80px;
 }
 
 .agregarProductos .addProductosContainer .iconoProductosContainer .iconoProductos {
     font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .agregarProductos .addProductosContainer .addProductosForm {
     width: 100%;
     height: 350px;
-    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormName {
-    background-color: aquamarine;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,83 +51,103 @@
 }
 
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormName .addProductosNameLabel {
-    width: 30%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormName .addProductosNameInput {
-    width: 70%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: start;
+    height: 35px;
 }
 
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormName .addProductosNameInput input {
-    width: 80%;
-    border: none;
+    width: 90%;
+   height: 80%;
 }
+/*Prec*/
 
 .agregarProductos .addProductosContainer .addProductosForm .addPorductosFormPrec {
-    background-color: rgb(61, 124, 124);
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 35px;
+    overflow: hidden;
 }
 
 .agregarProductos .addProductosContainer .addProductosForm .addPorductosFormPrec .addProductosPrecLabel {
-    width: 30%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .agregarProductos .addProductosContainer .addProductosForm .addPorductosFormPrec .addProductosPrecInput {
-    width: 70%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: start;
+    height: 35px;
 }
-
+.agregarProductos .addProductosContainer .addProductosForm .addPorductosFormPrec .addProductosPrecInput input{
+    width: 90%;
+    height: 80%;
+}
+/*Descricion*/
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormDesc {
-    background-color: rgb(61, 124, 124);
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormDesc .addProductosDescLabel {
-    width: 30%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormDesc .addProductosDescInput {
-    width: 70%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: start;
 }
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormDesc .addProductosDescInput textarea{
+    width: 90%;
+    height: 80%;
+}
+/*--Checkboxes*/
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
-}
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 1rem;
-    padding: .5rem 1rem;
+    gap: .8rem;
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
 }
 
+/*stock*/
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormStock{
-    flex: 2;
+    width: 20%;
     height: 50px;
     display: flex;
     align-items: center;
@@ -135,6 +161,9 @@
     display: flex;
     align-items: center;
     justify-content: end;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormStock .addProductosStockInput{
@@ -148,9 +177,8 @@
     width: 70%;
     height: 28px;
 }
-
+/*personalizado*/
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormPerso{
-    flex: 1;
     height: 50px;
     display: flex;
     align-items: center;
@@ -161,6 +189,9 @@
 
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormPerso .addProductosPersoLabel{
     width: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormPerso .addProductosPersoInput{
@@ -168,8 +199,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: .5rem;
 }
 
+/*Descuento*/
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDescuento{
     height: 50px;
     display: flex;
@@ -181,6 +214,9 @@
 
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDescuento .addProductosDescuentoLabel{
     width: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDescuento .addProductosDescuentoInput{
@@ -188,8 +224,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: .5rem;
 }
-
+/*Destacado*/
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDestacado{
     height: 50px;
     display: flex;
@@ -200,6 +237,9 @@
 
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDestacado .addProductosDestacadoLabel{
     width: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDestacado .addProductosDestacadoInput{
@@ -208,16 +248,38 @@
     align-items: center;
     justify-content: center;
 }
+/*--img*/
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormImg{
+    display: flex;
+    height: 35px;
+    overflow: hidden;
+}
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormImg .addProductosImgLabel{
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormImg .addProductosImgInput{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+}
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormImg .addProductosImgInput input{
+    width: 90%;
+    height: 80%;
 }
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 35px;
+    height: 40px;
+    overflow: hidden;
 }
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn .btnAddProducto{
     display: flex;
@@ -230,6 +292,19 @@
     font-size: 1.2rem;
     border: none;
     border-radius: 20px;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn .btnAddProducto:hover{
+    transform: scale(1.05);
+}
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn .btnAddProducto:active{
+    transform: scale(1.05);
 }
 .inputError {
     border: 2px solid red !important;

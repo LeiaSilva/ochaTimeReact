@@ -11,6 +11,9 @@ import { Admin } from './pages/Admin';
 import { RutaProtegida } from './components/RutaProtegida';
 import {LayoutAdmin} from './layouts/LayoutAdmin';
 import { ListaProductos } from './pages/ListaProductos';
+import {RegistroUser} from './pages/RegistroUser';
+import { LoginUser } from './pages/LoginUser';
+import {Acceso} from './pages/Acceso';
 function App() {
 
 
@@ -19,12 +22,15 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<LayoutPublic></LayoutPublic>}>
-            <Route path='/' element={<Shop></Shop>}></Route>
-            <Route path='/Home' element={<Home></Home>}></Route>
+            <Route path='/' element={<Home></Home>}></Route>
+            <Route path='/Shop' element={<Shop></Shop>}></Route>
             <Route path='/QuienesSomos' element={<SobreNosotros></SobreNosotros>}></Route>
             <Route path='/producto/:id' element={<Detalles></Detalles>}></Route>
+            <Route path='/Acceso' element={<Acceso></Acceso>}></Route>
           </Route>
           <Route path='/login' element={<Login></Login>}></Route>
+          <Route path='/loginUser' element={<LoginUser></LoginUser>}></Route>
+          <Route path='/RegistroUser' element={<RegistroUser></RegistroUser>}></Route>
           <Route element={
             <RutaProtegida>
               <LayoutAdmin></LayoutAdmin>

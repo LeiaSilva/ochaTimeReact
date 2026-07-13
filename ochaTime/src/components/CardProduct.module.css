@@ -115,6 +115,7 @@
     font-weight: 500;
     font-style: normal;
 }
+
 .cardContainer .cantidad .cant{
     font-size: 1.2rem;
     margin: .5rem;
@@ -124,6 +125,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    gap: .5rem;
 }
 .cardContainer .btns .btnCard{
     width: 100%;
@@ -134,4 +136,16 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+    transition:
+        background-color .25 ease,
+        box-shadow .25s ease;
+}
+.cardContainer .btns .btnCard:hover{
+    
+    background-color: rgba(148, 147, 147, 0.548);
+}
+.cardContainer .btns .btnCard:active{
+    
+    background-color: rgba(148, 147, 147, 0.548);
+    border: 2px solid pink;
 }

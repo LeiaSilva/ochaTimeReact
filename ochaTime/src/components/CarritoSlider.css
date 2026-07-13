@@ -1,71 +1,122 @@
+.overlayCarrito{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    backdrop-filter: blur(3px);
+    z-index: 4999;
+    animation: fadeOverlay .25s ease;
+}
+
 .modalSliderCarrito {
-    position: absolute;
-    background-color: aquamarine;
-    top: 5rem;
+    position: fixed;
+    background-color: white;
+    top: 0;
     right: 0;
-    height: 559px;
+    height: 100vh;
     width: 40%;
     z-index: 5000;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+
+    box-shadow: -15px 0 35px rgba(0,0,0,.25);
+
+    animation: slideCarrito .35s ease;
 }
 
 .modalSliderCarrito .cerrarCarritoContainer {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
+    padding: .5rem;
 }
 
 .modalSliderCarrito .cerrarCarritoContainer .cerrarCarrito {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: .2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.modalSliderCarrito .cerrarCarritoContainer .cerrarCarrito:hover{
+    transform: rotate(90deg);
+}
+.modalSliderCarrito .cerrarCarritoContainer .vaciar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(53, 53, 53, 0.384);
+    padding: .5rem;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    color: red;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+.modalSliderCarrito .cerrarCarritoContainer .vaciar:hover{
+     transform: scale(1.05);
+}
+.modalSliderCarrito .cerrarCarritoContainer .vaciar:active{
+     transform: scale(1.05);
 }
 
 .modalSliderCarrito .carritoTitulo {
     display: flex;
-    border-bottom: 1px solid grey;
-    border-top: 1px solid grey;
+    border-bottom: 1px solid rgb(221,221,221);
+    border-top: 1px solid rgb(221,221,221);
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    padding: .4rem 0;
 }
 
 .modalSliderCarrito .carritoTitulo .carritoTituloP {
     font-size: 1.5rem;
-    margin: .3rem;
+    margin: .3rem 1rem;
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .modalSliderCarrito .carritoTitulo .carritoCantidadTotal {
-    padding: .5rem;
-    margin: .3rem;
-    border-radius: 10px;
-    border: 1px solid grey;
+    padding: .5rem .8rem;
+    margin: .3rem 1rem;
+    border-radius: 20px;
+    border: 1px solid rgb(210,210,210);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .modalSliderCarrito .carritoEnvioGratis {
-    height: 25px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgb(247,247,247);
 }
 
 .modalSliderCarrito .carritoContainerDetalleCompra {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    border-top: 1px solid rgb(220,220,220);
+    padding-top: .5rem;
 }
 
 .modalSliderCarrito .carritoContainerDetalleCompra .carritoSubtotal {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid grey;
     overflow: hidden;
 }
 
 .modalSliderCarrito .carritoContainerDetalleCompra .carritoSubtotal p {
-    margin: 0.3rem 1rem;
+    margin: 0.4rem 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .modalSliderCarrito .carritoContainerDetalleCompra .carritoEnvioPrec {
@@ -76,34 +127,47 @@
 }
 
 .modalSliderCarrito .carritoContainerDetalleCompra .carritoEnvioPrec p {
-    margin: 0.3rem 1rem;
+    margin: 0.4rem 1rem;
 }
 
 .modalSliderCarrito .carritoContainerDetalleCompra .carritoTotal {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid grey;
-    overflow: hidden;
+    border-top: 1px solid rgb(220,220,220);
+    margin-top: .5rem;
 }
 
 .modalSliderCarrito .carritoContainerDetalleCompra .carritoTotal p {
-    margin: 0.3rem 1rem;
-    font-size: 1.9rem;
+    margin: .7rem 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .modalSliderCarrito .carritoContainerDetalleCompra .carritoBtnContainer {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .modalSliderCarrito .carritoContainerDetalleCompra .carritoBtn {
     margin: 0.5rem;
-    width: 80%;
-    padding: .8rem;
+    width: 85%;
+    padding: 1rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
+    transition: .3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.modalSliderCarrito .carritoContainerDetalleCompra .carritoBtn:hover{
+    transform: translateY(-3px);
 }
 
 .modalSliderCarrito .carritoProductosContainer {
@@ -111,9 +175,132 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+
     gap: 1rem;
+
     overflow-y: auto;
-    max-height: 300px;
+
     flex: 1;
+
+    padding: 1rem;
+}
+
+.modalSliderCarrito .carritoProductosContainer::-webkit-scrollbar{
+    width:8px;
+}
+
+.modalSliderCarrito .carritoProductosContainer::-webkit-scrollbar-thumb{
+    background:#d8d8d8;
+    border-radius:20px;
+}
+.carritoVacio{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    gap: .8rem;
+}
+
+.carritoVacioIcon{
+    font-size: 5rem;
+    color: rgb(180,180,180);
+}
+
+.carritoVacioTitulo{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #444;
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.carritoVacioTexto{
+    width: 70%;
+    color: #777;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@keyframes slideCarrito{
+
+    from{
+
+        transform: translateX(100%);
+
+    }
+
+    to{
+
+        transform: translateX(0);
+
+    }
+
+}
+
+@keyframes fadeOverlay{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+.slideOut{
+
+    animation: slideOut .35s forwards;
+
+}
+
+.overlayOut{
+
+    animation: fadeOut .35s forwards;
+
+}
+/*--animaciones--*/
+
+@keyframes slideOut{
+
+    from{
+
+        transform: translateX(0);
+
+    }
+
+    to{
+
+        transform: translateX(100%);
+
+    }
+
+}
+
+@keyframes fadeOut{
+
+    from{
+
+        opacity:1;
+
+    }
+
+    to{
+
+        opacity:0;
+
+    }
 
 }

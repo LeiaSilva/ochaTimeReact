@@ -6,9 +6,10 @@
 .volverShop {
     width: 100%;
     border: none;
-    border-bottom: 2px solid green;
+    border-bottom: 1px solid rgb(22, 22, 22);
     cursor: pointer;
     background-color: white;
+    margin: .2rem;
 }
 
 .detailContainer {
@@ -115,6 +116,7 @@
     margin: .5rem;
     flex-wrap: nowrap;
     gap: .5rem;
+    width: 100%;
 }
 
 .detailContainer .detailInfo .detailInfoBtns .perso {
@@ -138,13 +140,30 @@
 
 .detailContainer .detailInfo .detailInfoBtns .compra {
     font-size: 1rem;
-    border-radius: 2px;
+    border-radius: 20px;
     border: 1px solid grey;
+    background-color: pink;
     padding: 3px;
-    width: 100%;
+    width: 60%;
+    margin: .5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+.detailContainer .detailInfo .detailInfoBtns .compra:hover{
+    
+    transform: scale(1.04);
+}
+.detailContainer .detailInfo .detailInfoBtns .compra:active{
+    
+    transform: scale(1.04);
 }
 
 .detailContainer .detailInfo .detailStock {

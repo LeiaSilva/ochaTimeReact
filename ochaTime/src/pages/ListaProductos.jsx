@@ -121,13 +121,16 @@ export const ListaProductos = () => {
                                 <div className="listaBtnsEliminar">
                                     <Botones
                                         icono="trash-outline"
+                                        className='eliminarLista'
                                         onClick={() => eliminar(producto.id)} />
                                 </div>
                                 <div className="listaBtnsEditar">
-                                    <Botones icono="create-outline" onClick={() => {
-                                        setProductoEditando(producto)
-                                        setModalEditar(true)
-                                    }}></Botones>
+                                    <Botones icono="create-outline"
+                                        className='editarLista'
+                                        onClick={() => {
+                                            setProductoEditando(producto)
+                                            setModalEditar(true)
+                                        }}></Botones>
                                 </div>
                             </div>
                         </div>
@@ -190,7 +193,7 @@ export const ListaProductos = () => {
                                     />
                                 </label>
 
-                                <Botones texto="Guardar cambios" icono="save-outline" type="submit" />
+                                <Botones texto="Guardar" icono="save-outline" className='guardarCambiosBtn' type="submit" />
                             </form>
                             {exitoEditar && <Advertencias texto="¡Producto actualizado!" icon="checkmark-circle-outline" />}
                             {errorEditar && <Advertencias texto={errorEditar} icon="alert-circle-outline" />}

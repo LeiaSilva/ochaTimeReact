@@ -1,0 +1,63 @@
+.accesoLogin {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 30px;
+}
+
+.accesoLogin h2 {
+  font-size: 2rem;
+  color: #5b3a29;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.accesoLogin a {
+  width: 320px;
+  padding: 25px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  color: #5b3a29;
+  background-color: #fff8f0;
+
+  border: 2px solid #f1d5bd;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 25px rgba(130, 85, 50, 0.12);
+
+  transition: all 0.3s ease;
+}
+
+.accesoLogin a:hover {
+  transform: translateY(-5px);
+  background-color: #ffe9d6;
+  box-shadow: 0 15px 35px rgba(130, 85, 50, 0.18);
+}
+
+.accesoLogin a:first-of-type {
+  background-color: #ffd9b8;
+  border-color: #ffc48f;
+}
+
+.accesoLogin a:first-of-type:hover {
+  background-color: #ffcda5;
+}
+
+.accesoLogin a:last-of-type {
+  background-color: #f3e8ff;
+  border-color: #ddc2ff;
+}
+
+.accesoLogin a:last-of-type:hover {
+  background-color: #ead7ff;
+}

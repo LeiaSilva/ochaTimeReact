@@ -109,7 +109,7 @@ a {
     color: aliceblue;
     width: 20%;
     top: .2rem;
-    right: 10rem;
+    right: 8.5rem;
     z-index: 2;
     width: 20px;
     height: 20px;
@@ -134,24 +134,28 @@ a {
 .bounce{
     animation: carritoBounce 0.8s ease;
 }
-.containerInicioSesion{
-    width: auto;
-    width: 6%;
-}
- .containerInicioSesion .inicioSesion{
+ .containerCarrito .loginContainer{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: auto;
+    width: 15%;
 }
-.containerInicioSesion .inicioSesion .loginIcon{
-    font-size: 1.2rem;
+.containerCarrito .loginContainer .loginIcon{
+    font-size: 1.8rem;
     margin: .2rem;
     color: black;
+    display: flex;
+    align-items: center; 
+    transition: transform 0.4s ease;
 }
-.containerInicioSesion .inicioSesion p{
-    color: grey;
-    font-size: 1.2rem;
-    font-style: bold;
+   
+
+.containerCarrito .loginContainer .loginIcon:hover{
+    transform: scale(1.1);
+}
+.containerCarrito .loginContainer .loginIcon:active{
+    transform: scale(1.1);
 }
 /*--Animaciones--*/
 @keyframes carritoBounce {

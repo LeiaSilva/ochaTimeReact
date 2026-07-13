@@ -2,11 +2,27 @@ import { db } from '../Firebase/config'
 import { collection, getDocs } from 'firebase/firestore'
 import { CardProduct } from '../components/CardProduct'
 import { useState, useEffect } from 'react'
+import { useLocation } from "react-router-dom";
 import { useParams } from 'react-router-dom'
+import { BannerSlider } from '../components/BannerSlider'
+import { Advertencias } from '../components/Advertencias';
 import './Home.css';
 export const Home = () => {
 
     const [destacados, setDestacados] = useState([])
+    const location = useLocation();
+    const [mensaje, setMensaje] = useState(location.state?.mensaje || "");
+    useEffect(() => {
+
+        if (mensaje) {
+
+            setTimeout(() => {
+                setMensaje("");
+            }, 3000);
+
+        }
+
+    }, [mensaje]);
 
     useEffect(() => {
         const fetchDestacados = async () => {
@@ -23,10 +39,7 @@ export const Home = () => {
     return (
         <>
             {/* SLIDER - por ahora placeholder */}
-            <section className="homeBanner">
-                <h1>Bienvenida a Ocha Time 🍪</h1>
-                <p>Las mejores cookie boxes kawaii</p>
-            </section>
+            <BannerSlider></BannerSlider>
             {/* VALORES */}
             <section className="homeValores">
                 <h2>¿Por qué elegirnos?</h2>
@@ -62,6 +75,12 @@ export const Home = () => {
                         <CardProduct key={producto.id} {...producto} />
                     ))}
                 </div>
+                {mensaje && (
+                <Advertencias
+                    icon="checkmark-circle-outline"
+                    texto={mensaje}
+                />
+            )}
             </section>
 
         </>

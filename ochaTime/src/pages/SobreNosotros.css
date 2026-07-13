@@ -1,0 +1,80 @@
+.sobreNosotros {
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+}
+
+.sobreNosotrosImg {
+
+    width: 30%;
+
+}
+
+.sobreNosotrosImg img {
+
+    width: 100%;
+    object-fit: cover;
+
+
+}
+
+.sobreNosotrosInfo {
+
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.sobreNosotrosInfo h2 {
+
+    font-size: 2.7rem;
+
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.sobreNosotrosInfo p {
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    color: #666;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+.linkBtnSobreNosotros {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnSobreNosotros {
+    width: 50%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: .5rem;
+    background-color: antiquewhite;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+.btnSobreNosotros:hover{
+    transform: scale(1.05);
+}
+.btnSobreNosotros:active{
+    transform: scale(1.05);
+}

@@ -1,0 +1,277 @@
+.authContainer {
+    min-height: 85vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    background: #fff7f0;
+}
+
+
+/* TARJETA */
+
+.authCard {
+
+    width: 380px;
+
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(120, 80, 50, 0.15);
+
+    animation: aparecer .5s ease;
+}
+
+
+.authCard h2 {
+
+    color: #6b4226;
+
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+.authCard p {
+
+    color: #9a7560;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 25px;
+
+}
+
+
+/* FORMULARIO */
+
+.authCard form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.authCard input {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 15px 18px;
+
+    border-radius: 18px;
+
+    border: 2px solid #f2d7c2;
+
+    background: #fffaf6;
+
+    font-size: 1rem;
+
+    outline: none;
+
+    transition: .3s ease;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+.authCard input:focus {
+
+    border-color: #e8a878;
+
+    transform: scale(1.005);
+
+}
+
+
+/* BOTON PRINCIPAL */
+
+.authCard form .btnIniciaSesion {
+
+    margin-top: 10px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #e8a878;
+
+    color: white;
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+.authCard form .btnIniciaSesion:hover {
+
+    background: #dc9060;
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* SEPARADOR */
+
+.separador {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 25px 0;
+
+    color: #c39b82;
+
+}
+
+
+.separador::before,
+.separador::after {
+
+    content: "";
+
+    height: 1px;
+
+    flex: 1;
+
+    background: #efd6c2;
+
+}
+
+
+
+/* GOOGLE */
+
+.googleBtn {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 20px;
+
+    border: 2px solid #f2d7c2;
+
+    background: #fff;
+
+    color: #6b4226;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+
+.googleBtn:hover {
+
+    background: #fff4e8;
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* CAMBIO LOGIN / REGISTRO */
+
+.cambiarAuth {
+
+    margin-top: 25px;
+
+    font-size: .95rem;
+
+}
+
+
+.cambiarAuth a {
+
+    margin-left: 5px;
+
+    color: #d9825b;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+}
+
+
+.cambiarAuth a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* ANIMACION */
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
