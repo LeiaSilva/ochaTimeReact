@@ -28,7 +28,7 @@
     color: rgb(102, 73, 30);
     margin: 0;
     height: 5rem;
-    width: 30%;
+    width: 100%;
     font-size: 1.8rem;
     font-family: "Pacifico", cursive;
     font-weight: 400;
@@ -47,6 +47,7 @@
 
 .loginContariner .loginInfoContainer .loginFormTitulo p {
     font-size: 1.5rem;
+    display: flex;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -272,4 +273,20 @@
     align-items: center;
     gap: .5rem;
     color: grey;
+}
+@media (max-width:480px) {
+    .loginContariner{
+        width: 80%;
+    }
+    .loginContariner .loginInfoContainer .loginFormOchatime{
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .loginContariner{
+        width: 80%;
+    }
+    .loginContariner .loginInfoContainer .loginFormOchatime{
+        width: 100%;
+    }
 }
