@@ -76,3 +76,10 @@
         transform: scale(1);
     }
 }
+/*RESPONSIVE*/
+@media (max-width:480px) {
+    .advertencia {
+        width: 80%;
+        left: 10%;
+    }
+}

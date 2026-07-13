@@ -304,3 +304,13 @@
     }
 
 }
+@media (max-width:480px) {
+    .modalSliderCarrito{
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .modalSliderCarrito{
+        width: 100%;
+    }
+}

@@ -50,6 +50,9 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -72,9 +75,81 @@
         box-shadow .25s ease;
 
 }
-.btnSobreNosotros:hover{
+
+.btnSobreNosotros:hover {
     transform: scale(1.05);
 }
-.btnSobreNosotros:active{
+
+.btnSobreNosotros:active {
     transform: scale(1.05);
+}
+
+/*RESPONSIVE*/
+@media (max-width:480px) {
+    .sobreNosotros {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .sobreNosotrosImg {
+        width: 50%;
+        margin: .2rem;
+    }
+
+    .sobreNosotrosInfo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .2rem;
+        width: 100%;
+    }
+
+    .sobreNosotrosInfo h2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .sobreNosotrosInfo p {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(max-width:768px){
+    .sobreNosotros {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .sobreNosotrosImg {
+        width: 50%;
+        margin: .2rem;
+    }
+
+    .sobreNosotrosInfo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .2rem;
+        width: 100%;
+    }
+
+    .sobreNosotrosInfo h2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .sobreNosotrosInfo p {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

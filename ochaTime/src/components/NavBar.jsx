@@ -2,13 +2,14 @@ import { NavLink, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useCarrito } from '../Context/CarritoContext';
 import { CarritoSlider } from './CarritoSlider';
-import {Acceso} from '../pages/Acceso';
+import { Acceso } from '../pages/Acceso';
 import './NavBar.css';
 
 export const NavBar = () => {
     const { carrito, totalUnidades } = useCarrito();
     const [animar, setAnimar] = useState(false);
     const [openCarrito, setOpenCarrito] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
     useEffect(() => {
         if (totalUnidades > 0) {
             setAnimar(true);
@@ -17,15 +18,18 @@ export const NavBar = () => {
             }, 800);
         };
     }, [carrito]);
-
     return (
         <>
             <nav className="nav">
-                <ion-icon name="home-outline" className="homeResponsive"></ion-icon>
+                <ion-icon
+                    name={menuOpen ? "close-outline" : "home-outline"}
+                    className="homeResponsive"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                ></ion-icon>
                 <div className="-logo">
                     <Link to={`/`}><p>Ocha Time</p></Link>
                 </div>
-                <ul className="-list">
+                <ul className={`-list ${menuOpen ? "menuOpen" : ""}`}>
                     <li>
                         <NavLink to={`/`} className={({ isActive }) => isActive ? 'activo' : ''}>Home</NavLink>
                     </li>

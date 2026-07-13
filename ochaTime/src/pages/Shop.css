@@ -5,3 +5,15 @@
     align-items: center;
     justify-content: center;
 }
+@media (max-width:480px) {
+    .tienda{
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
+@media(max-width:768px){
+    .tienda{
+        flex-direction: column;
+        gap: .5rem;
+    }
+}

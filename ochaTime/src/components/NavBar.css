@@ -39,12 +39,14 @@ a {
     transition: transform 0.4s ease;
 
 }
-.nav .-logo:hover{
+
+.nav .-logo:hover {
     transform: scale(1.01);
-}   
-.nav .-logo:active{
+}
+
+.nav .-logo:active {
     transform: scale(1.01);
-}   
+}
 
 .nav .-list {
     display: flex;
@@ -58,7 +60,7 @@ a {
     text-decoration: none;
     margin: .5rem;
     padding: 5px 10px;
-    border-bottom:2px solid transparent ;
+    border-bottom: 2px solid transparent;
     font-family: "Cherry Bomb One", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -86,12 +88,15 @@ a {
 
     transition: transform 0.3s ease;
 }
+
 .nav .-list li:hover::after {
     transform: scaleX(1);
 }
+
 .nav .-list li:has(.activo)::after {
     transform: scaleX(1);
 }
+
 .containerCarrito {
     width: 28%;
     height: 50px;
@@ -125,38 +130,45 @@ a {
     display: inline-block;
     transition: transform 0.4s ease;
 }
-.containerCarrito .-icon:hover{
+
+.containerCarrito .-icon:hover {
     transform: scale(1.1);
 }
-.containerCarrito .-icon:active{
+
+.containerCarrito .-icon:active {
     transform: scale(1.1);
 }
-.bounce{
+
+.bounce {
     animation: carritoBounce 0.8s ease;
 }
- .containerCarrito .loginContainer{
+
+.containerCarrito .loginContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     width: auto;
     width: 15%;
 }
-.containerCarrito .loginContainer .loginIcon{
+
+.containerCarrito .loginContainer .loginIcon {
     font-size: 1.8rem;
     margin: .2rem;
     color: black;
     display: flex;
-    align-items: center; 
+    align-items: center;
     transition: transform 0.4s ease;
 }
-   
 
-.containerCarrito .loginContainer .loginIcon:hover{
+
+.containerCarrito .loginContainer .loginIcon:hover {
     transform: scale(1.1);
 }
-.containerCarrito .loginContainer .loginIcon:active{
+
+.containerCarrito .loginContainer .loginIcon:active {
     transform: scale(1.1);
 }
+
 /*--Animaciones--*/
 @keyframes carritoBounce {
 
@@ -174,5 +186,272 @@ a {
 
     100% {
         transform: scale(1);
+    }
+}
+
+/*--RESPONSIVE:CELUS*/
+@media (max-width:480px) {
+
+    .nav {
+        position: relative;
+        overflow: hidden;
+        justify-content: space-around;
+        padding: 0 18px;
+        height: 70px;
+
+    }
+
+    /* BOTON HAMBURGUESA */
+
+    .nav .homeResponsive {
+
+        display: block;
+
+        font-size: 2rem;
+
+        cursor: pointer;
+
+        color: rgb(102, 73, 30);
+
+        order: 1;
+
+    }
+
+    /* LOGO */
+
+    .nav .-logo {
+
+        width: auto;
+
+        height: auto;
+
+        font-size: 1.4rem;
+
+        order: 2;
+
+    }
+
+    /* LOGIN + CARRITO */
+
+    .containerCarrito {
+
+        width: auto;
+
+        order: 3;
+
+        gap: 12px;
+
+    }
+
+    .containerCarrito .loginContainer {
+
+        width: auto;
+
+    }
+
+    .containerCarrito .-contador {
+
+        right: -1.2px;
+
+        top: 1px;
+
+    }
+
+    /* MENU */
+
+    .nav .-list {
+        position: absolute;
+
+        gap: 1rem;
+
+        top: 20rem;
+
+        left: 0;
+
+        width: 100%;
+        min-height: 350px;
+
+        background: rgb(216, 145, 145);
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 1rem;
+
+        padding: 25px 0;
+
+        border-bottom: 1px solid #ddd;
+
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
+
+        transform: translateY(-20px);
+
+        opacity: 0;
+
+        pointer-events: none;
+
+        transition: .3s ease;
+
+        z-index: 9999;
+
+    }
+    .nav .-list.menuOpen {
+
+        transform: translateY(0);
+        position: fixed;
+        opacity: 1;
+        top: 70px;
+
+        left: 0;
+        pointer-events: all;
+        width: 100%;
+
+
+    }
+
+    .nav .-list li {
+
+        margin: 0;
+
+        font-size: 1.05rem;
+
+    }
+
+}
+/*--TABLETS/CELUS GRANDES*/
+@media(max-width:768px){
+     .nav {
+        position: relative;
+        overflow: hidden;
+        justify-content: space-around;
+        padding: 0 18px;
+        height: 70px;
+
+    }
+
+    /* BOTON HAMBURGUESA */
+
+    .nav .homeResponsive {
+
+        display: block;
+
+        font-size: 2rem;
+
+        cursor: pointer;
+
+        color: rgb(102, 73, 30);
+
+        order: 1;
+
+    }
+
+    /* LOGO */
+
+    .nav .-logo {
+
+        width: auto;
+
+        height: auto;
+
+        font-size: 1.4rem;
+
+        order: 2;
+
+    }
+
+    /* LOGIN + CARRITO */
+
+    .containerCarrito {
+
+        width: auto;
+
+        order: 3;
+
+        gap: 12px;
+
+    }
+
+    .containerCarrito .loginContainer {
+
+        width: auto;
+
+    }
+
+    .containerCarrito .-contador {
+
+        right: -1.2px;
+
+        top: 1px;
+
+    }
+
+    /* MENU */
+
+    .nav .-list {
+        position: absolute;
+
+        gap: 1rem;
+
+        top: 20rem;
+
+        left: 0;
+
+        width: 100%;
+        min-height: 350px;
+
+        background: rgb(216, 145, 145);
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 1rem;
+
+        padding: 25px 0;
+
+        border-bottom: 1px solid #ddd;
+
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
+
+        transform: translateY(-20px);
+
+        opacity: 0;
+
+        pointer-events: none;
+
+        transition: .3s ease;
+
+        z-index: 9999;
+
+    }
+    .nav .-list.menuOpen {
+
+        transform: translateY(0);
+        position: fixed;
+        opacity: 1;
+        top: 70px;
+
+        left: 0;
+        pointer-events: all;
+        width: 100%;
+
+
+    }
+
+    .nav .-list li {
+
+        margin: 0;
+
+        font-size: 1.05rem;
+
     }
 }

@@ -69,3 +69,17 @@ footer {
     color: rgba(104, 91, 91, 0.89);
     font-size: .8rem;
 }
+@media (max-width:480px) {
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(max-width:768px){
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,6 @@
+ @media (max-width:480px) {
+ header {
+        position: relative;
+        z-index: 1000;
+    }
+}

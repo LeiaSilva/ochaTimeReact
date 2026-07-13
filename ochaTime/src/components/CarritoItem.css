@@ -67,3 +67,13 @@
     font-size: 1.8rem;
     color: red;
 }
+/*RESPONSIVE*/
+@media (max-width:480px) {
+    .cardCarritoContainer{
+        width: 100%;
+    }
+    .cardCarritoContainer .cardCarritoDetalle{
+        width: 80%;
+    }
+    
+}

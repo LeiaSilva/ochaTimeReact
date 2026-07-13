@@ -1,8 +1,9 @@
-.cardLink{
+.cardLink {
     text-decoration: none;
     color: inherit;
     display: contents;
 }
+
 .cardContainer {
     display: flex;
     flex-direction: column;
@@ -19,10 +20,12 @@
     position: relative;
     transition: transform 0.4s ease;
 }
-.cardContainer:hover{
+
+.cardContainer:hover {
     transform: scale(1.04);
 }
-.cardContainer:active{
+
+.cardContainer:active {
     transform: scale(1.04);
 }
 
@@ -47,10 +50,12 @@
     font-weight: 500;
     font-style: normal;
 }
-.cardContainer .esp{
+
+.cardContainer .esp {
     width: 100%;
 }
-.cardContainer .esp .stock{
+
+.cardContainer .esp .stock {
     font-size: .6rem;
     color: rgb(0, 255, 34);
     text-align: start;
@@ -59,6 +64,7 @@
     font-weight: 500;
     font-style: normal;
 }
+
 .cardContainer .esp .prodName {
     font-size: 1.3rem;
     text-align: center;
@@ -67,7 +73,8 @@
     font-weight: 400;
     font-style: normal;
 }
-.cardContainer .esp .prec{
+
+.cardContainer .esp .prec {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,6 +84,7 @@
     font-weight: 500;
     font-style: normal;
 }
+
 .cardContainer .esp .prec p {
     font-size: 1.3rem;
     font-family: "Poppins", sans-serif;
@@ -84,7 +92,7 @@
     font-style: normal;
 }
 
-.cardContainer .esp .prec .precTachado{
+.cardContainer .esp .prec .precTachado {
     font-size: 1rem;
     text-decoration: line-through;
     color: grey;
@@ -92,7 +100,8 @@
     font-weight: 500;
     font-style: normal;
 }
-.cardContainer .cantidad{
+
+.cardContainer .cantidad {
     border-radius: 20px;
     border: 1px solid grey;
     width: 40%;
@@ -103,7 +112,8 @@
     font-weight: 500;
     font-style: normal;
 }
-.cardContainer .cantidad button{
+
+.cardContainer .cantidad button {
     width: auto;
     font-size: 1.2rem;
     border-radius: 45px;
@@ -116,18 +126,20 @@
     font-style: normal;
 }
 
-.cardContainer .cantidad .cant{
+.cardContainer .cantidad .cant {
     font-size: 1.2rem;
     margin: .5rem;
 }
-.cardContainer .btns{
+
+.cardContainer .btns {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     gap: .5rem;
 }
-.cardContainer .btns .btnCard{
+
+.cardContainer .btns .btnCard {
     width: 100%;
     padding: .4rem;
     border-radius: 10px;
@@ -140,12 +152,34 @@
         background-color .25 ease,
         box-shadow .25s ease;
 }
-.cardContainer .btns .btnCard:hover{
-    
+
+.cardContainer .btns .btnCard:hover {
+
     background-color: rgba(148, 147, 147, 0.548);
 }
-.cardContainer .btns .btnCard:active{
-    
+
+.cardContainer .btns .btnCard:active {
+
     background-color: rgba(148, 147, 147, 0.548);
     border: 2px solid pink;
 }
+
+/*RESPONSIVE CELUS*/
+@media (max-width:480px) {
+    .cardContainer {
+        min-width: 70%;
+    }
+    .cardContainer .desc{
+        left: 255px;
+    }
+}
+@media(max-width:768px){
+    .cardContainer {
+        width: 45%;
+        min-width: 70%;
+    }
+    .cardContainer .desc{
+        left: 238px;
+    }
+}
+

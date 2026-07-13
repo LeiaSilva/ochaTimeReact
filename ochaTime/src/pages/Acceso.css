@@ -13,6 +13,14 @@
   color: #5b3a29;
   margin-bottom: 15px;
   text-align: center;
+  font-family: "Cherry Bomb One", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+.accesoLogin p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .accesoLogin a {
@@ -36,6 +44,9 @@
   box-shadow: 0 10px 25px rgba(130, 85, 50, 0.12);
 
   transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .accesoLogin a:hover {
@@ -60,4 +71,9 @@
 
 .accesoLogin a:last-of-type:hover {
   background-color: #ead7ff;
+}
+@media (max-width:480px) {
+  .accesoLogin a{
+    width: 60%;
+  }
 }
