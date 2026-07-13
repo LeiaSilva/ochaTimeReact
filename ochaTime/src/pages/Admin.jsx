@@ -2,7 +2,7 @@ import { Botones } from "../components/Botones";
 import { useState } from "react";
 import { Advertencias } from "../components/Advertencias";
 import { db } from "../Firebase/config";
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc } from "Firebase/firestore";
 import './Admin.css';
 export const Admin = ({ }) => {
     //sobre descuento 
