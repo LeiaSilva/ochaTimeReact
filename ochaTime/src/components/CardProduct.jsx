@@ -5,8 +5,9 @@ import { Botones } from './Botones';
 import { Cantidad } from './Cantidad';
 import { Advertencias } from './Advertencias';
 import style from './CardProduct.module.css';
-export const CardProduct = ({ nombre, prec, descuento, img, stock, id }) => {
+export const CardProduct = ({ producto }) => {
     const { addToCarrito } = useCarrito();
+    const {nombre, prec, descuento, img, stock, id} = producto
     //--Sobre cards
     const hayDesc = descuento > 0;
     const montoDesc = (prec * descuento) / 100;

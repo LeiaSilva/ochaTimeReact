@@ -128,6 +128,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+    overflow: hidden;
 }
 
 .detailContainer .detailInfo .detailInfoBtns .noEsPerso {
@@ -142,7 +143,8 @@
     font-size: 1rem;
     border-radius: 20px;
     border: 1px solid grey;
-    background-color: pink;
+    background-color: var(--bordes);
+    border: none;
     padding: 3px;
     width: 60%;
     margin: .5rem;
@@ -173,5 +175,157 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+
+}
+
+/*RESPONSIVE CELUS*/
+@media (max-width:480px){
+
+    .volverInicio{
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .volverShop{
+        width: 100%;
+    }
+
+    .detailContainer{
+
+        flex-direction: column;
+
+        height: auto;
+
+        gap: 1.5rem;
+
+        padding-bottom: 2rem;
+
+    }
+
+    .detailContainer .detailProducto{
+
+        width: 100%;
+
+    }
+
+    .detailContainer .detailProducto .detailImg{
+
+        width: 90%;
+
+        margin: 1rem auto;
+
+    }
+
+    .detailContainer .detailProducto .desc{
+
+        width: 25%;
+
+        left: 20px;
+
+    }
+
+    .detailContainer .detailInfo{
+
+        width: 92%;
+
+        height: auto;
+
+        padding: 1rem;
+
+    }
+
+    .detailContainer .detailInfo .detailInfoNom{
+
+        width: 100%;
+
+        height: auto;
+
+        font-size: 1.8rem;
+
+    }
+
+    .detailContainer .detailInfo .detailDescrip{
+
+        width: 95%;
+
+        height: auto;
+
+        text-align: center;
+
+        font-size: .95rem;
+
+    }
+
+    .detailContainer .detailInfo .detailPrec p{
+
+        font-size: 1.7rem;
+
+    }
+
+    .detailContainer .detailInfo .detailInfoBtns{
+
+        width: 100%;
+
+    }
+
+    .detailContainer .detailInfo .detailInfoBtns .compra{
+
+        width: 100%;
+
+    }
+
+    .detailContainer .detailInfo .detailInfoBtns .perso{
+
+        width: 100%;
+
+    }
+
+}
+/*======================
+      TABLETS
+=======================*/
+@media (max-width:768px){
+
+    .volverInicio{
+        width: 30%;
+    }
+
+    .detailContainer{
+
+        flex-direction: column;
+
+        height: auto;
+
+        padding-bottom: 2rem;
+
+    }
+
+    .detailContainer .detailProducto{
+
+        width: 80%;
+
+    }
+
+    .detailContainer .detailProducto .detailImg{
+
+        width: 100%;
+
+    }
+
+    .detailContainer .detailInfo{
+
+        width: 80%;
+
+        height: auto;
+
+        padding: 1.5rem;
+
+    }
+
+    .detailContainer .detailInfo .detailInfoBtns .compra{
+
+        width: 80%;
+
+    }
 
 }

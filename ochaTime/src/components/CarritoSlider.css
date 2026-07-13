@@ -9,7 +9,7 @@
 
 .modalSliderCarrito {
     position: fixed;
-    background-color: white;
+    background: #fffaf6;
     top: 0;
     right: 0;
     height: 100vh;
@@ -63,8 +63,8 @@
 
 .modalSliderCarrito .carritoTitulo {
     display: flex;
-    border-bottom: 1px solid rgb(221,221,221);
-    border-top: 1px solid rgb(221,221,221);
+    border-bottom: 1px solid var(--bordes);
+    border-top: 1px solid var(--bordes);
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
@@ -83,7 +83,7 @@
     padding: .5rem .8rem;
     margin: .3rem 1rem;
     border-radius: 20px;
-    border: 1px solid rgb(210,210,210);
+    border: 1px solid var(--bordes);
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -101,7 +101,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    border-top: 1px solid rgb(220,220,220);
+    border-top: 1px solid var(--bordes);
     padding-top: .5rem;
 }
 
@@ -134,7 +134,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid rgb(220,220,220);
+    border-top: 1px solid var(--bordes);
     margin-top: .5rem;
 }
 
@@ -164,6 +164,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
+     background-color: var(--bordes);
 }
 
 .modalSliderCarrito .carritoContainerDetalleCompra .carritoBtn:hover{

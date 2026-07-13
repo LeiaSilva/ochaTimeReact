@@ -4,6 +4,7 @@
     gap: 1rem;
     align-items: center;
     justify-content: center;
+    background-color: var(--vainilla);;
 }
 @media (max-width:480px) {
     .tienda{

@@ -5,6 +5,7 @@
 }
 
 .cardContainer {
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -14,7 +15,7 @@
     width: 20%;
     margin: 1rem 1rem;
     padding: 1.5rem 1.5rem;
-    border: 1px solid rgb(170, 170, 170);
+    border: 1px solid var(--bordes);
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     border-radius: 35px;
     position: relative;
@@ -143,7 +144,7 @@
     width: 100%;
     padding: .4rem;
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 1px solid var(--bordes);
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -155,12 +156,12 @@
 
 .cardContainer .btns .btnCard:hover {
 
-    background-color: rgba(148, 147, 147, 0.548);
+    background-color: var(--bordes);
 }
 
 .cardContainer .btns .btnCard:active {
 
-    background-color: rgba(148, 147, 147, 0.548);
+    background-color: var(--bordes);
     border: 2px solid pink;
 }
 

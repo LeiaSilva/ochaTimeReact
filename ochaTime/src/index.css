@@ -4,3 +4,13 @@
   padding: 0;
   overflow-x: hidden;
 }
+:root {
+    --crema: #FFF7ED;
+    --vainilla: #fffaf6;
+    --rosa-pastel: #E8B4BC;
+    --rosa-acento: #D88C9A;
+    --bordes: #e8a878;;
+    --marron-cookie: #8B5E3C;
+    --marron-texto: #5A4033;
+    --blanco: #FFFFFF;
+}

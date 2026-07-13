@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 450px;
-    background-color: #fff5f8;
+    background-color: var(--Crema);
     text-align: center;
     gap: 1rem;
 }
@@ -12,7 +12,7 @@
 .homeBanner h1 {
     font-size: 3rem;
     font-family: "Pacifico", cursive;
-    color: #c47a9e;
+    color: var(--marron-cookie);
 }
 
 .homeBanner p {
@@ -23,20 +23,48 @@
 .homeDestacados {
     padding: 3rem 2rem;
     text-align: center;
+    background: #fffaf6;
 }
 
 .homeDestacados h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
     font-family: "Pacifico", cursive;
-    color: #c47a9e;
+    color: var(--marron-cookie);
 }
 
 .homeDestacadosGrid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
+    background-color: var(--Crema);
+}
+
+.homeDestacadosGrid .homeProductosDestacados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+    overflow: hidden;
+    width: 90%;
+}
+
+.homeDestacadosGrid .btnSlidersContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeDestacadosGrid .btnSlidersContainer .btnsSlide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 2rem;
 }
 
 .homeValores {
@@ -44,12 +72,12 @@
     text-align: center;
     height: 500px;
     overflow: hidden;
-    background-color: #caa6b7;
+    background-color: var(--bordes);
 }
 
 .homeValores h2 {
     font-size: 2rem;
-    color: #c47a9e;
+    color: var(--marron-cookie);
     margin-bottom: 2rem;
     font-family: "Pacifico", cursive;
     font-weight: 400;
@@ -127,42 +155,131 @@
     font-weight: 300;
     font-style: normal;
 }
-@media (max-width:480px){
+
+@media (max-width:480px) {
+
     /*--valores*/
-    .homeValores{
+    .homeValores {
         height: auto;
         margin: 0;
     }
 
-    .homeValoresGrid{
+    .homeValoresGrid {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: auto;
         border: none;
     }
-    .homeValorCard{
+
+    .homeValorCard {
         width: 80%;
         margin: 0 .5rem;
     }
+
     /*destacados*/
-    
+
+    .homeDestacados {
+        padding: 2rem 1rem;
+    }
+
+
+    .homeDestacadosGrid {
+
+        flex-wrap: nowrap;
+
+        gap: .5rem;
+
+        width: 100%;
+
+    }
+
+
+    .homeDestacadosGrid .homeProductosDestacados {
+
+        width: 85%;
+
+        overflow: hidden;
+
+        flex-shrink: 0;
+
+
+    }
+
+
+    .homeDestacadosGrid .btnSlidersContainer {
+
+        width: auto;
+
+    }
+
+
+    .homeDestacadosGrid .btnSlidersContainer .btnsSlide {
+
+        font-size: 1.7rem;
+
+    }
+
 }
+
 /*-tablets celus grandes*/
-@media(max-width:768px){
-    .homeValores{
+@media(max-width:768px) {
+    .homeValores {
         height: auto;
         margin: 0;
     }
 
-    .homeValoresGrid{
+    .homeValoresGrid {
         align-items: center;
         justify-content: center;
         height: auto;
         border: none;
     }
-    .homeValorCard{
+
+    .homeValorCard {
         width: 60%;
         margin: 0 .5rem;
+    }
+
+    /*--destacados--*/
+
+    .homeDestacados {
+        padding: 2rem 1rem;
+    }
+
+
+    .homeDestacadosGrid {
+
+        flex-wrap: nowrap;
+
+        gap: .5rem;
+
+        width: 100%;
+
+    }
+
+
+    .homeDestacadosGrid .homeProductosDestacados {
+
+        width: 85%;
+
+        overflow: hidden;
+
+        flex-shrink: 0;
+
+    }
+
+
+    .homeDestacadosGrid .btnSlidersContainer {
+
+        width: auto;
+
+    }
+
+
+    .homeDestacadosGrid .btnSlidersContainer .btnsSlide {
+
+        font-size: 1.7rem;
+
     }
 }

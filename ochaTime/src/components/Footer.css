@@ -6,6 +6,7 @@ footer {
     display: flex;
     width: 100%;
     border-top: 1px solid rgb(71, 71, 71);
+     background-color: var(--bordes);
 }
 
 .footer-container .-section1 {

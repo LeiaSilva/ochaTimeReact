@@ -188,7 +188,7 @@ export const Admin = ({ }) => {
                         </div>
                         {
                             tieneDescuento && (
-                                <div>
+                                <div className="containerDescuento">
                                     <label>Porcentaje de descuento</label>
                                     <input
                                         type="number"

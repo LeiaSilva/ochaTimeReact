@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 550px;
-    
+
 }
 
 .agregarProductos .addProductosContainer {
@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid grey ;
+    border-bottom: 1px solid grey;
     height: 80px;
 }
 
@@ -70,8 +70,9 @@
 
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormName .addProductosNameInput input {
     width: 90%;
-   height: 80%;
+    height: 80%;
 }
+
 /*Prec*/
 
 .agregarProductos .addProductosContainer .addProductosForm .addPorductosFormPrec {
@@ -101,10 +102,12 @@
     justify-content: start;
     height: 35px;
 }
-.agregarProductos .addProductosContainer .addProductosForm .addPorductosFormPrec .addProductosPrecInput input{
+
+.agregarProductos .addProductosContainer .addProductosForm .addPorductosFormPrec .addProductosPrecInput input {
     width: 90%;
     height: 80%;
 }
+
 /*Descricion*/
 .agregarProductos .addProductosContainer .addProductosForm .addProductosFormDesc {
     height: 50px;
@@ -130,12 +133,14 @@
     align-items: center;
     justify-content: start;
 }
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormDesc .addProductosDescInput textarea{
+
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormDesc .addProductosDescInput textarea {
     width: 90%;
     height: 80%;
 }
+
 /*--Checkboxes*/
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,17 +151,17 @@
 }
 
 /*stock*/
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormStock{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormStock {
     width: 20%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .5rem;
-    border-right: 1px solid rgb(185,185,185);
+    border-right: 1px solid rgb(185, 185, 185);
 }
 
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormStock .addProductosStockLabel{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormStock .addProductosStockLabel {
     width: 50%;
     display: flex;
     align-items: center;
@@ -166,35 +171,36 @@
     font-style: normal;
 }
 
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormStock .addProductosStockInput{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormStock .addProductosStockInput {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: start;
 }
 
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormStock .addProductosStockInput input{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormStock .addProductosStockInput input {
     width: 70%;
     height: 28px;
 }
+
 /*personalizado*/
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormPerso{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormPerso {
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .5rem;
-    border-right: 1px solid rgb(185,185,185);
+    border-right: 1px solid rgb(185, 185, 185);
 }
 
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormPerso .addProductosPersoLabel{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormPerso .addProductosPersoLabel {
     width: auto;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormPerso .addProductosPersoInput{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormPerso .addProductosPersoInput {
     width: auto;
     display: flex;
     align-items: center;
@@ -203,31 +209,32 @@
 }
 
 /*Descuento*/
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDescuento{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDescuento {
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .5rem;
-    border-right: 1px solid rgb(185,185,185);
+    border-right: 1px solid rgb(185, 185, 185);
 }
 
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDescuento .addProductosDescuentoLabel{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDescuento .addProductosDescuentoLabel {
     width: auto;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDescuento .addProductosDescuentoInput{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDescuento .addProductosDescuentoInput {
     width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: .5rem;
 }
+
 /*Destacado*/
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDestacado{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDestacado {
     height: 50px;
     display: flex;
     align-items: center;
@@ -235,26 +242,28 @@
     gap: .5rem;
 }
 
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDestacado .addProductosDestacadoLabel{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDestacado .addProductosDestacadoLabel {
     width: auto;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDestacado .addProductosDestacadoInput{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDestacado .addProductosDestacadoInput {
     width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 /*--img*/
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormImg{
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormImg {
     display: flex;
     height: 35px;
     overflow: hidden;
 }
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormImg .addProductosImgLabel{
+
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormImg .addProductosImgLabel {
     width: 50%;
     display: flex;
     align-items: center;
@@ -263,25 +272,29 @@
     font-weight: 300;
     font-style: normal;
 }
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormImg .addProductosImgInput{
+
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormImg .addProductosImgInput {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: start;
     overflow: hidden;
 }
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormImg .addProductosImgInput input{
+
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormImg .addProductosImgInput input {
     width: 90%;
     height: 80%;
 }
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn{
+
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;
     overflow: hidden;
 }
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn .btnAddProducto{
+
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn .btnAddProducto {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -300,93 +313,155 @@
         transform .25s ease,
         box-shadow .25s ease;
 }
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn .btnAddProducto:hover{
+
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn .btnAddProducto:hover {
     transform: scale(1.05);
 }
-.agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn .btnAddProducto:active{
+
+.agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn .btnAddProducto:active {
     transform: scale(1.05);
 }
+
 .inputError {
     border: 2px solid red !important;
 }
-@media (max-width:480px) {
-    .agregarProductos .addProductosContainer{
-        width: 90%;
-        overflow: hidden;
-        gap: 1rem;
 
-    }
-    .agregarProductos .addProductosContainer .iconoProductosContainer{
-        height: 50px;
-    }
-    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck{
-        flex-direction: column;
-        gap: .2rem;
-        height: 350px;
-        overflow: hidden;
-    }
-    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormStock{
-        width: 100%;
-        overflow: hidden;
-    }
-    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormPerso{
-        width: 100%;
-        overflow: hidden;
-    }
-    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDescuento{
-        width: 100%;
-        overflow: hidden;
-    }
-    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDestacado{
-        width: 100%;
-        overflow: hidden;
-    }
-    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormName{
-        overflow: hidden;
-    }
-    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn{
-        height: 150px;
-    }
-
-    
+/*--si hay descento*/
+.containerDescuento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
 }
-@media(max-width:768px){
-    .agregarProductos .addProductosContainer{
+
+.containerDescuento label {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.containerDescuento input {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    overflow: hidden;
+}
+
+@media (max-width:480px) {
+    .agregarProductos .addProductosContainer {
         width: 90%;
         overflow: hidden;
         gap: 1rem;
 
     }
-    .agregarProductos .addProductosContainer .iconoProductosContainer{
+
+    .agregarProductos .addProductosContainer .iconoProductosContainer {
         height: 50px;
     }
-    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck{
+
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck {
         flex-direction: column;
         gap: .2rem;
         height: 350px;
         overflow: hidden;
     }
-    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormStock{
+
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormStock {
         width: 100%;
         overflow: hidden;
     }
-    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormPerso{
+
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormPerso {
         width: 100%;
         overflow: hidden;
     }
-    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDescuento{
+
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDescuento {
         width: 100%;
         overflow: hidden;
     }
-    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDestacado{
+
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDestacado {
         width: 100%;
         overflow: hidden;
     }
-    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormName{
+
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormName {
         overflow: hidden;
     }
-    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn{
+
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn {
         height: 150px;
+    }
+    .containerDescuento{
+        height: 50px;
+    }
+
+
+}
+
+@media(max-width:768px) {
+    .agregarProductos .addProductosContainer {
+        width: 90%;
+        overflow: hidden;
+        gap: 1rem;
+
+    }
+
+    .agregarProductos .addProductosContainer .iconoProductosContainer {
+        height: 50px;
+    }
+
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck {
+        flex-direction: column;
+        gap: .2rem;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormStock {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormPerso {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDescuento {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormCheck .addProductosFormDestacado {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormName {
+        overflow: hidden;
+    }
+
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormBtn {
+        height: 150px;
+    }
+      .containerDescuento{
+        height: 50px;
+    }
+    .agregarProductos .addProductosContainer .addProductosForm .addProductosFormDesc{
+        overflow: hidden;
     }
 
 }

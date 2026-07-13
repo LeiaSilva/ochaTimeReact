@@ -7,10 +7,12 @@ import { useParams } from 'react-router-dom'
 import { BannerSlider } from '../components/BannerSlider'
 import { Advertencias } from '../components/Advertencias';
 import './Home.css';
+import { Botones } from '../components/Botones';
 export const Home = () => {
 
     const [destacados, setDestacados] = useState([])
     const location = useLocation();
+    const [indice, setIndice] = useState(0);
     const [mensaje, setMensaje] = useState(location.state?.mensaje || "");
     useEffect(() => {
 
@@ -36,6 +38,26 @@ export const Home = () => {
         }
         fetchDestacados()
     }, [])
+    const siguienteProducto = () => {
+
+        if (indice < destacados.length - 1) {
+
+            setIndice(indice + 1);
+
+        }
+
+    };
+
+
+    const anteriorProducto = () => {
+
+        if (indice > 0) {
+
+            setIndice(indice - 1);
+
+        }
+
+    };
     return (
         <>
             {/* SLIDER - por ahora placeholder */}
@@ -71,16 +93,34 @@ export const Home = () => {
             <section className="homeDestacados">
                 <h2>Productos Destacados</h2>
                 <div className="homeDestacadosGrid">
-                    {destacados.map(producto => (
-                        <CardProduct key={producto.id} {...producto} />
-                    ))}
+                    <div className="btnSlidersContainer">
+                        <Botones icono="chevron-back-outline" className="btnsSlide" onClick={anteriorProducto}></Botones>
+                    </div>
+                    <div className="homeProductosDestacados">
+                        {
+                            destacados
+                                .slice(indice, indice + 3)
+                                .map(producto => (
+
+                                    <CardProduct
+                                        key={producto.id}
+                                        producto={producto}
+                                    />
+
+                                ))
+                        }
+                    </div>
+
+                    <div className="btnSlidersContainer">
+                        <Botones icono="chevron-forward-outline" className="btnsSlide" onClick={siguienteProducto}></Botones>
+                    </div>
                 </div>
                 {mensaje && (
-                <Advertencias
-                    icon="checkmark-circle-outline"
-                    texto={mensaje}
-                />
-            )}
+                    <Advertencias
+                        icon="checkmark-circle-outline"
+                        texto={mensaje}
+                    />
+                )}
             </section>
 
         </>

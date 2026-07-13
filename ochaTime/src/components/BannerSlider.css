@@ -90,7 +90,7 @@
     font-weight: 300;
     font-style: normal;
 
-    background: #D8A48F;
+    background: var(--bordes);
 
     color: white;
     transition:
