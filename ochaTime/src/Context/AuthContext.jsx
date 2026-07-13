@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect } from 'react'
 import { auth } from '../Firebase/config'
 import { signInWithEmailAndPassword, signOut, onAuthStateChanged, createUserWithEmailAndPassword , GoogleAuthProvider,
-    signInWithPopup } from 'Firebase/auth'
+    signInWithPopup } from 'firebase/auth'
 
 const AuthContext = createContext()
 
