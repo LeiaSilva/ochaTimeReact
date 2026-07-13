@@ -1,16 +1,53 @@
-# React + Vite
+# 🍪 Ocha Time
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tienda online de cookie boxes kawaii, desarrollada con React + Firebase.
 
-Currently, two official plugins are available:
+##Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React + Vite
+- React Router DOM
+- Firebase Authentication
+- Firebase Firestore
+- Context API
+- CSS Modules
 
-## React Compiler
+## Instalación y ejecución local
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Cloná el repositorio:
+\`\`\`bash
+git clone https://github.com/tuusuario/ocha-time.git
+\`\`\`
 
-## Expanding the ESLint configuration
+2. Entrá a la carpeta del proyecto:
+\`\`\`bash
+cd ocha-time
+\`\`\`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Instalá las dependencias:
+\`\`\`bash
+npm install
+\`\`\`
+
+4. Creá un archivo \`.env\` con tus credenciales de Firebase:
+\`\`\`
+VITE_API_KEY=tu_api_key
+VITE_AUTH_DOMAIN=tu_auth_domain
+VITE_PROJECT_ID=tu_project_id
+\`\`\`
+
+5. Corré el proyecto:
+\`\`\`bash
+npm run dev
+\`\`\`
+
+## Demo
+
+[Ver proyecto en Netlify](https://ochatime.netlify.app/)
+
+## Funcionalidades
+
+- Catálogo de productos desde Firestore
+- Carrito de compras con Context API
+- Login de administrador con Firebase Auth
+- Panel admin con CRUD de productos
+- Diseño responsivo
