@@ -1,5 +1,5 @@
 import { db } from '../Firebase/config'
-import { collection, getDocs } from 'Firebase/firestore'
+import { collection, getDocs } from 'firebase/firestore'
 import { CardProduct } from '../components/CardProduct'
 import { useState, useEffect } from 'react'
 import { useLocation } from "react-router-dom";
