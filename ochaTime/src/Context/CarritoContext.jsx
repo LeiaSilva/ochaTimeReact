@@ -1,5 +1,5 @@
 import { useContext, useState, createContext } from "react";
-import { buscarCupon } from "../firebase/cupones";
+import { buscarCupon } from "../Firebase/cupones";
 
 export const CarritoContext = createContext();
 export const CarritoProvider = ({ children }) => {

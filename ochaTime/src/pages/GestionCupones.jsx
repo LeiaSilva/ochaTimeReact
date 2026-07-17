@@ -2,7 +2,7 @@ import { Advertencias } from "../components/Advertencias";
 import { Botones } from "../components/Botones";
 import { collection, getDocs, deleteDoc, doc, updateDoc, addDoc } from 'firebase/firestore'
 import { useEffect , useState} from "react";
-import { db } from "../firebase/config";
+import { db } from "../Firebase/cupones";
 import './GestionCupones.css';
 
 export const GestionCupones = ({ }) => {
