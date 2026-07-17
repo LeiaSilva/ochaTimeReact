@@ -2,7 +2,7 @@ import { CardProduct } from '../components/CardProduct';
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { db } from '../Firebase/config';
-import { collection, getDocs } from 'Firebase/firestore'
+import { collection, getDocs } from 'firebase/firestore'
 import './Shop.css';
 export const Shop = () => {
     const [productos, setProductos] = useState([]);

@@ -136,12 +136,12 @@
 }
 
 /* destacado */
-.destacadoSi {
+.activoSi {
     color: rgb(0, 255, 13);
     font-size: 1.3rem;
 }
 
-.destacadoNo {
+.activoNo {
     color: #fa1515;
     font-size: 1.3rem;
 }

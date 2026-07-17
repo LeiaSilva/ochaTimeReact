@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { db } from '../Firebase/config'
-import { collection, getDocs, deleteDoc, doc, updateDoc } from 'Firebase/firestore'
+import { collection, getDocs, deleteDoc, doc, updateDoc } from 'firebase/firestore'
 import { Botones } from '../components/Botones';
 import { Advertencias } from '../components/Advertencias';
 import './ListaProductos.css';

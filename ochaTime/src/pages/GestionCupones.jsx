@@ -155,8 +155,8 @@ export const GestionCupones = ({ }) => {
                             <div className="listaDestacado">
 
                                 {cupon.activo
-                                    ? <ion-icon name="checkmark-outline" class="destacadoSi"></ion-icon>
-                                    : <ion-icon name="close-outline" class="destacadoNo"></ion-icon>
+                                    ? <ion-icon name="checkmark-outline" class="activoSi"></ion-icon>
+                                    : <ion-icon name="close-outline" class="activoNo"></ion-icon>
                                 }
 
                             </div>

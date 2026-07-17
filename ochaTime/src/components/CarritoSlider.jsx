@@ -7,13 +7,27 @@ import './CarritoSlider.css';
 
 export const CarritoSlider = ({ open, onClose }) => {
 
-    const { carrito, totalPrecio, totalUnidades , vaciarCarrito } = useCarrito();
+    const {
+        carrito,
+        totalPrecio,
+        totalUnidades,
+        vaciarCarrito,
+
+        aplicarCupon,
+        cuponAplicado,
+        descuento,
+        totalFinal
+
+    } = useCarrito();
 
     const [mostrar, setMostrar] = useState(open);
 
     const navigate = useNavigate();
 
     const [cerrando, setCerrando] = useState(false);
+    const [codigoCupon, setCodigoCupon] = useState("");
+    const [mensajeCupon, setMensajeCupon] = useState("");
+    const [errorCupon, setErrorCupon] = useState(false);
 
     useEffect(() => {
 
@@ -40,6 +54,14 @@ export const CarritoSlider = ({ open, onClose }) => {
         }, 350);
 
     };
+    const handleAplicarCupon = async () => {
+
+        const respuesta = await aplicarCupon(codigoCupon);
+
+        setMensajeCupon(respuesta.mensaje);
+        setErrorCupon(!respuesta.ok);
+
+    }
 
     if (!mostrar) return null;
 
@@ -109,14 +131,57 @@ export const CarritoSlider = ({ open, onClose }) => {
                 </div>
 
                 <div className="carritoContainerDetalleCompra">
+                    <div className="carritoCuponContainer">
+
+                        <input
+                            type="text"
+                            placeholder="Código de descuento"
+                            value={codigoCupon}
+                            onChange={(e) => setCodigoCupon(e.target.value)}
+                        />
+
+                        <Botones
+                            texto="Aplicar"
+                            className="btnCupon"
+                            onClick={handleAplicarCupon}
+                        />
+
+                    </div>
+
+                    {
+                        mensajeCupon &&
+
+                        <p className={errorCupon ? "mensajeErrorCupon" : "mensajeExitoCupon"}>
+
+                            {mensajeCupon}
+
+                        </p>
+
+                    }
 
                     <div className="carritoSubtotal">
                         <p>Subtotal</p>
                         <p>{totalPrecio}</p>
                     </div>
+                    {
+                        cuponAplicado && (
+
+                            <div className="carritoDescuento">
+
+                                <p>
+                                    Descuento ({cuponAplicado.codigo})
+                                </p>
+
+                                <p>
+                                    -${descuento.toFixed(2)}
+                                </p>
+
+                            </div>
+                        )
+                    }
 
                     <div className="carritoTotal">
-                        <p>${totalPrecio}</p>
+                        <p>${totalFinal}</p>
                     </div>
 
                     <div className="carritoBtnContainer">
