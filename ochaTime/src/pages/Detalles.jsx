@@ -5,7 +5,7 @@ import { Botones } from "../components/Botones";
 import { Cantidad } from "../components/Cantidad";
 import { Advertencias } from "../components/Advertencias";
 import { db } from '../Firebase/config'
-import { doc, getDoc } from 'Firebase/firestore'
+import { doc, getDoc } from 'firebase/firestore'
 import style from "./Detalles.module.css";
 
 export const Detalles = () => {
