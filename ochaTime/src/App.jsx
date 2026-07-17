@@ -14,6 +14,7 @@ import { ListaProductos } from './pages/ListaProductos';
 import {RegistroUser} from './pages/RegistroUser';
 import { LoginUser } from './pages/LoginUser';
 import {Acceso} from './pages/Acceso';
+import { GestionCupones } from './pages/GestionCupones';
 function App() {
 
 
@@ -37,6 +38,7 @@ function App() {
             </RutaProtegida>}>
             <Route path='/ListaProductos' element={<ListaProductos></ListaProductos>}></Route>
             <Route path='/Admin' element={<Admin></Admin>}></Route>
+            <Route path='/GestionCupones' element={<GestionCupones></GestionCupones>}></Route>
             </Route>
         </Routes>
       </BrowserRouter>

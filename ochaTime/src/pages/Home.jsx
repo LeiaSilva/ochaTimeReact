@@ -60,7 +60,7 @@ export const Home = () => {
     };
     return (
         <>
-            {/* SLIDER - por ahora placeholder */}
+            {/* SLIDER*/}
             <BannerSlider></BannerSlider>
             {/* VALORES */}
             <section className="homeValores">

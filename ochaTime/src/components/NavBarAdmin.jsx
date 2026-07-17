@@ -23,6 +23,9 @@ export const NavBarAdmin = () => {
                     <li>
                         <NavLink to={`/Admin`} className={({ isActive }) => isActive ? 'activo' : ''}>Agregar Productos</NavLink>
                     </li>
+                     <li>
+                        <NavLink to={`/GestionCupones`} className={({ isActive }) => isActive ? 'activo' : ''}>Cupones</NavLink>
+                    </li>
                 </ul>
             </nav>
         </>
